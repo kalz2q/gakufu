@@ -1,0 +1,8 @@
+find . -name '*.aux' | xargs rm -rf
+find . -name '*.fdb_latexmk' | xargs rm -rf
+find . -name '*.fls' | xargs rm -rf
+find . -name '*.synctex.gz' | xargs rm -rf
+find . -name '*.idx' | xargs rm -rf
+find . -name '*.ilg' | xargs rm -rf
+find . -name '*.ind' | xargs rm -rf
+find . -name '*.log' | xargs rm -rf
