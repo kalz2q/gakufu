@@ -11,7 +11,9 @@
 global = {
   \key c \major
   \time 4/4
-  \tempo 4=152
+  \set Score.tempoHideNote = ##t
+\tempo 4=120
+\numericTimeSignature
 }
 
 

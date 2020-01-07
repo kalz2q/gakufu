@@ -13,6 +13,8 @@
 \relative c'' {
   \key c \major
   \time 4/4
+  \set Score.tempoHideNote = ##t
+\tempo 4=120
   \numericTimeSignature
 
   g4 \tuplet3/2{a4 g8} e4 c' | % 1

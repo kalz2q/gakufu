@@ -9,8 +9,10 @@
   }
 
   \relative c'' {
-    \time 4/4
     \key c \major
+    \time 4/4
+    \set Score.tempoHideNote = ##t
+\tempo 4=120
     \numericTimeSignature
     g2 a4 g|
     e4. d8 c4 c |

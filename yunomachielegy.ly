@@ -13,6 +13,8 @@ indent = 0\mm
 \relative c {
 \key b \minor
 \time 4/4
+\set Score.tempoHideNote = ##t
+\tempo 4=120
 \numericTimeSignature
 
 r8 fis b b b4 \tuplet5/4{cis16 d cis b cis} |

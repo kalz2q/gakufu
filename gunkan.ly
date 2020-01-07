@@ -11,8 +11,10 @@
   }
 
   \relative c' {
-    \time 2/2
     \key  d \major
+    \time 2/2
+    \set Score.tempoHideNote = ##t
+\tempo 4=120
     \numericTimeSignature
     
     a4. fis'8 fis4 fis4 |

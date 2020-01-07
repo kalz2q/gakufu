@@ -13,6 +13,8 @@ indent = 0\mm
 \relative c' {
 \key a \minor
 \time 4/4
+\set Score.tempoHideNote = ##t
+\tempo 4=120
 \numericTimeSignature
 \partial 8
 e8 | % 1

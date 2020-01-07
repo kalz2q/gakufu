@@ -13,6 +13,8 @@ indent = 0\mm
 \relative c' {
 \key f \major
 \time 2/4
+\set Score.tempoHideNote = ##t
+\tempo 4=120
 \numericTimeSignature
 
 c8. bes16 a8 c |

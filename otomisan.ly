@@ -13,6 +13,8 @@ indent = 0\mm
 \relative c' {
 \key des \major
 \time 2/4
+\set Score.tempoHideNote = ##t
+\tempo 4=120
 \numericTimeSignature
 
 \tuplet3/2{r4 as8} \tuplet3/2{des4 des8} |

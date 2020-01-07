@@ -9,6 +9,8 @@ global = {
   \key as \major
   \numericTimeSignature
   \time 2/4
+  \set Score.tempoHideNote = ##t
+\tempo 4=120
   \partial 4
   \tempo "Tempo di Marcia" 4=40
 }

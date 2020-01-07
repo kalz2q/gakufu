@@ -3,7 +3,8 @@
 global = {
   \key a \minor
   \time 4/4
-  \tempo 4=100
+\set Score.tempoHideNote = ##t
+\tempo 4=120
   \partial 4.
 }
 

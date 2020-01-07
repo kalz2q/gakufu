@@ -11,6 +11,8 @@
   \relative c' {
     \time 6/8
     \key c \major
+   \set Score.tempoHideNote = ##t
+\tempo 4=120
     \numericTimeSignature
     \partial 8
     e8 |

@@ -5,9 +5,10 @@
 }
 
 global = {
-  \time 4/4
   \key c \major
-  \tempo 4=100
+  \time 4/4
+    \set Score.tempoHideNote = ##t
+\tempo 4=120
 }
 
 chordNames = \chordmode {
