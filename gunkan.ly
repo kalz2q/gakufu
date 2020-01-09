@@ -6,7 +6,7 @@
 \score {
 
   \layout {
-    line-width = #150
+    line-width = #170
     indent = 0\mm
   }
 
