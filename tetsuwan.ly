@@ -2,13 +2,12 @@
 
 % 鉄腕アトム(そらをこえてららら)
 
-\score {
 
-\layout {
-line-width = #170
-indent = 0\mm
+\header {
+piece = "鉄腕アトム(そらをこえてららら)"
 }
 
+melody =
 \relative c' {
 \key bes \major
 \time 4/4
@@ -40,6 +39,20 @@ bes2. r4 |
 \bar "|."
 }
 
+\score {
+<<
+\chords {
+\set chordChanges=##t
+bes1 bes es bes f:7 bes f:7 f:7
+bes bes es bes f:7 bes
+es2 f2:7 bes2
+}
+\new Staff {\melody}
+>>
+\layout {
+line-width = #190
+indent = 0\mm
+}
 \midi {}
 
 }

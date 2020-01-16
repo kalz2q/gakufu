@@ -1,46 +1,58 @@
 \version "2.18.2"
 
 % 手をたたきましょう
-
-\score {
-
-\layout {
-line-width = #170
-indent = 0\mm
+\header {
+piece = "手をたたきましょう"
 }
 
+melody =
 \relative c' {
-\key c \major
+\key d \major
 \time 4/4
 \set Score.tempoHideNote = ##t
 \tempo 4=120
 \numericTimeSignature
 
-e4 e8 d e4 e8 d |
-e4 e8 f g4 r |
-a4 a8 g f4 r |
-g4 g8 f e4 r |
+fis4 fis8 e fis4 fis8 e |
+fis4 fis8 g a4 r |
+b4 b8 a g4 r |
+a4 a8 g fis4 r |
 \break
-e4 e8 d e4 e8 d |
-e4 e8 f g4 r |
-a4 a8 g f4 f |
-e e e r |
+fis4 fis8 e fis4 fis8 e |
+fis4 fis8 g a4 r |
+b4 b8 a g4 g |
+fis fis fis r |
 \break
-g4 g8 g a4 g |
-e e e r |
-g4 g8 g a4 g |
-e e e r |
+a4 a8 a b4 a |
+fis fis fis r |
+a4 a8 a b4 a |
+fis fis fis r |
 \break
-c'4 c c r |
-a a a r|
-g f e d |
-c c c r |
+d'4 d d r |
+b b b r|
+a g fis e |
+d d d r |
 
 
 
 \bar "|."
 }
 
+\score {
+<<
+\chords {
+\set chordChanges=##t
+d1 d g d 
+d d g d 
+d d d d
+d g a:7 d
+}
+\new Staff {\melody}
+>>
+\layout {
+line-width = #190
+indent = 0\mm
+}
 \midi {}
 
 }

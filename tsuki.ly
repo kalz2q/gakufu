@@ -1,7 +1,7 @@
 \version "2.18.2"
 
 \header {
-piece = "たこのうた(たこたこがあがれ)"
+piece = "つき(でたでたつきがまるいまるい)"
 }
 
 
@@ -12,23 +12,18 @@ melody =
 \set Score.tempoHideNote = ##t
 \tempo 4=120
 \numericTimeSignature
-
-g4 e8 f
-g4 e8 f
-g4. a8
-g4 r
-a4. a8
-g4 e
-e4. c8
-d4 r
-g4 e8 f
-g4 e8 f
-g4. a8
-g4 r
-a4. a8
-g4 e
-d4. e8
-c4 r
+g e |
+g e |
+c d  |
+e4. r8 |
+g8. a16 g8 e |
+g8. a16 g8 e |
+g8. a16 g8 e |
+d4. r8 |
+c8 d e a |
+g4 e |
+d e |
+c4. r8
 
 
 \bar "|."
@@ -38,10 +33,9 @@ c4 r
 <<
 \chords {
 \set chordChanges=##t
-c2 c c c
-f c c g:7
-c c c c
-f c g:7 c
+c2 c c4 g:7 c2
+c c c g:7
+c4. f8 c2 g:7 c
 }
 \new Staff {\melody}
 >>
