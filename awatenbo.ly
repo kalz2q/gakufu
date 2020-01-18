@@ -4,18 +4,17 @@
 % \index{あわてんぼう@あわてんぼうのサンタクロース}
 % \index{くりすます@あわてんぼうのサンタクロース}
 
-\score {
 
-\layout {
-line-width = #170
-indent = 0\mm
+\header {
+piece = "あわてんぼうのサンタクロース"
 }
 
+melody =
 \relative c' {
 \key f \major
 \time 2/4
 \set Score.tempoHideNote = ##t
-\tempo 4=120
+\tempo 4=60
 \numericTimeSignature
 \partial 4
 
@@ -38,11 +37,26 @@ f2~ |
 f8 r  d' d |
 c r a c |
 bes r a g |
-f4 
+f8 r r4
 
 \bar "|."
 }
 
+\score {
+<<
+\chords {
+\set chordChanges=##t
+%
+f4 f2 f bes f f f g:7 c:7
+f f bes bes f c:7 f bes f c:7 f2
+
+}
+\new Staff {\melody}
+>>
+\layout {
+line-width = #190
+indent = 0\mm
+}
 \midi {}
 
 }
