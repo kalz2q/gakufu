@@ -3,51 +3,66 @@
 % ああそれなのに(そらにゃきょうもあどばるん)
 % \index{ああそれ@ああそれなのに(そらにゃきょうもあどばるん)}
 
-\score {
-
-\layout {
-line-width = #170
-indent = 0\mm
+\header {
+piece = "ああそれなのに(そらにゃきょうもあどばるん)"
 }
 
-\relative c {
-\key b \minor
+melody =
+\relative c' {
+\key c \minor
 \time 6/8
 \set Score.tempoHideNote = ##t
 \tempo 4=120
 \numericTimeSignature
 
-r4 fis8 b4 cis8 |
-d4 cis8 b4 cis8 |
-d4 d8 fis d g |
-fis2. |
-r4 d8 fis4 g8 |
-b4 cis8 d4 \tuplet3/2{cis16 d cis} |
-b4 g8 b4 g8 |
-fis2. |
+r4 g8 c4 d8 |
+es4 d8 c4 d8 |
+es4 es8 g es as |
+g2. |
+r4 es8 g4 as8 |
+c4 d8 es4 \tuplet3/2{d16 es d} |
+c4 as8 c4 as8 |
+g2. |
 \break
-b4 cis16 b g4 fis8 |
-g4 fis8 d cis b |
-d4 fis8 cis4 d8 |
-b2. |
-b'4 cis8 cis4 cis8~ |
-cis4 b8 d4 cis8 |
-b4 g8 b4 g8 |
-fis4. g8 b4 |
+c4 d16 c as4 g8 |
+as4 g8 es d c |
+es4 g8 d4 es8 |
+c2. |
+c'4 d8 d4 d8~ |
+d4 c8 es4 d8 |
+c4 as8 c4 as8 |
+g4. as8 c4 |
 \break
-r4 d,8 cis4 d8 |
-fis4. b,4. |
-r4 g'8 fis4 g8 |
-b4. fis4. |
-b4. fis4 b8 |
-g4 fis8 d4 cis8 |
-b2.~ |
-b4. r4 r8 |
+r4 es,8 d4 es8 |
+g4. c,4. |
+r4 as'8 g4 as8 |
+c4. g4. |
+c4. g4 c8 |
+as4 g8 es4 d8 |
+c2.~ |
+c4. r4 r8 |
 
 
 \bar "|."
 }
 
+\score {
+<<
+\chords {
+\set chordChanges=##t
+%
+c2.:m c:m c:m c:m c:m c:m f:m c:m
+f:m c:m c4.: g:7 c2.:m
+g:7 c:m f:m c4.:m f:m
+c2.:m c:m f:m c:m
+c:m c4.:m g:7 c2.:m c:m
+}
+\new Staff {\melody}
+>>
+\layout {
+line-width = #190
+indent = 0\mm
+}
 \midi {}
 
 }

@@ -4,10 +4,11 @@
 % \index{びっぐべん@ビッグ・ベンの鐘(ウェストミンスター宮殿の時計)}
 
 
+
 \score {
 
 \layout {
-line-width = #170
+line-width = #190
 indent = 0\mm
 }
 

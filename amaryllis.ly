@@ -40,10 +40,12 @@ c c2 f f g:7 c1
 }
 \new Staff {\melody}
 >>
+
 \layout {
 line-width = #190
 indent = 0\mm
 }
+
 \midi {}
 
 }
