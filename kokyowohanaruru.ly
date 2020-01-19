@@ -3,13 +3,11 @@
 % 故郷を離るる歌(そののさゆりなでしこかきねのちぐさ)
 % \index{こきょうを@故郷を離るる歌(そののさゆりなでしこかきねのちぐさ)}
 
-\score {
-
-\layout {
-line-width = #170
-indent = 0\mm
+\header {
+piece = "故郷を離るる歌(そののさゆりなでしこかきねのちぐさ)"
 }
 
+melody =
 \relative c' {
 \key c \major
 \time 4/4
@@ -35,10 +33,26 @@ c8 e
 g g g g g4 c8 b
 a a a a a4 d8 c
 b4 g g a8 b 
-c2 r
-\bar ":|."
+c2 r4
+
+\bar "|."
 }
 
+\score {
+<<
+\chords {
+\set chordChanges=##t
+%
+c4 c1 g:7 c g:7
+f1 c d2:m g:7 c1 
+c1 f g:7 c2.
+}
+\new Staff {\melody}
+>>
+\layout {
+line-width = #190
+indent = 0\mm
+}
 \midi {}
 
 }
