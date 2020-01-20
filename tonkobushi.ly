@@ -3,18 +3,16 @@
 % トンコ節(あなたのくれたおびどめの)
 % \index{とんこ@トンコ節(あなたのくれたおびどめの)}
 
-\score {
-
-\layout {
-line-width = #170
-indent = 0\mm
+\header {
+piece = "トンコ節(あなたのくれたおびどめの)"
 }
 
+melody =
 \relative c' {
 \key f \major
 \time 2/4
-  \set Score.tempoHideNote = ##t
-\tempo 4=120
+\set Score.tempoHideNote = ##t
+\tempo 4=70
 \numericTimeSignature
 
 \tuplet3/2{c4 c8} \tuplet3/2{c4 c'8~} |
@@ -41,7 +39,20 @@ f4 f |
 
 \bar "|."
 }
-
+\score {
+<<
+\chords {
+\set chordChanges=##t
+%
+f f f f f f f f f f f f g:m g:m
+d:m d:m f f f d:m f f 
+c:7 c:7 f f f f f f f f f f f f
+}
+\new Staff {\melody}
+>>
+\layout {
+line-width = #190
+indent = 0\mm
+}
 \midi {}
-
 }
