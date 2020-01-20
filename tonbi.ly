@@ -40,7 +40,7 @@ c2. r4 |
 \chords {
 \set chordChanges=##t
 %
-c c c c f f f f c c c c g:7 g:7 g:7 g:7
+c, c c c f f f f c c c c g:7 g:7 g:7 g:7
 c c c c f f f f c c  g:7 g:7 c c c c 
 c c c c a:m a:m a:m a:m c c c c a:m a:m a:m a:m
 c c c c c c c c f f g:7 g:7 c c c c
