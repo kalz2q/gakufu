@@ -17,7 +17,6 @@ melody =
 
 \bar "|."
 }
-
 \score {
 <<
 \chords {
@@ -32,5 +31,4 @@ line-width = #190
 indent = 0\mm
 }
 \midi {}
-
 }
