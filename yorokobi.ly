@@ -2,18 +2,16 @@
 
 % 喜びの歌(はれたるあおぞらただようくもよ)
 
-\score {
-
-\layout {
-line-width = #170
-indent = 0\mm
+\header {
+piece = "喜びの歌(はれたるあおぞらただようくもよ)"
 }
 
+melody =
 \relative c' {
 \key d \major
 \time 4/4
 \set Score.tempoHideNote = ##t
-\tempo 4=120
+\tempo 4=100
 \numericTimeSignature
 
 fis4 fis g a |
@@ -36,9 +34,27 @@ a g fis e |
 d d e fis |
 e4. d8 d2 |
 
+
+
+
 \bar "|."
 }
+\score {
+<<
+\chords {
+\set chordChanges=##t
+%
+d4 d d d a:7 a:7 a:7 a:7 d d d d d d a:7 a:7
+d4 d d d a:7 a:7 a:7 a:7 d d d d a:7 a:7 d: d:
+a:7 a:7 d d a:7 a:7 d d a:7 a:7 a:7 a:7 b:m b:m a:7 a:7
+d4 d d d a:7 a:7 a:7 a:7 d d d d a:7 a:7 d: d:
 
+}
+\new Staff {\melody}
+>>
+\layout {
+line-width = #190
+indent = 0\mm
+}
 \midi {}
-
 }

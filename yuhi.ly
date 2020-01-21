@@ -3,17 +3,18 @@
 %
 
 \header {
-piece = ""
+piece = "夕日(ぎんぎんぎらぎらゆうひがしずむ)"
 }
 
 melody =
 \relative c' {
-\key c \major
+\key d \major
 \time 2/4
 \set Score.tempoHideNote = ##t
 \tempo 4=60
 \numericTimeSignature
 %
+g 
 
 \bar "|."
 }

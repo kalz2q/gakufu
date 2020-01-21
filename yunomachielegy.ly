@@ -3,43 +3,59 @@
 % 湯の町エレジー(いずのやまやまつきあわく)
 % \index{ゆのまち@湯の町エレジー(いずのやまやまつきあわく)}
 
-\score {
-
-\layout {
-line-width = #170
-indent = 0\mm
+\header {
+piece = "湯の町エレジー(いずのやまやまつきあわく)"
 }
 
-\relative c {
-\key b \minor
+melody =
+\relative c' {
+\key c \minor
 \time 4/4
 \set Score.tempoHideNote = ##t
-\tempo 4=120
+\tempo 4=60
 \numericTimeSignature
 
-r8 fis b b b4 \tuplet5/4{cis16 d cis b cis} |
-d4~ d16 cis d g fis2~ |
-fis8 d'4 cis8 b4 g8 fis16 g |
-fis2. r4 |
-r8 b4 fis16 d' cis8 b g fis~ |
-fis g16 a g fis d8 fis4 b,8 cis |
-d4. fis8 \tuplet3/2{fis16 g fis} d8 d cis |
-b2. r4 |
-r8 g'4 fis8 cis'4. b16 cis |
-d8 cis b b b2~ |
-b8 g b cis b g16 fis g8 b16 cis |
-e,8 e fis g fis4 fis, |
-b4. cis8 d fis4 cis'8 |
+r8 g c c c4 \tuplet5/4{d16 es d c d} |
+es4~ es16 d es as g2~ |
+g8 es'4 d8 c4 as8 g16 as |
+g2. r4 |
+r8 c4 g16 es' d8 c as g~ |
+g as16 bes as g es8 g4 c,8 d |
+es4. g8 \tuplet3/2{g16 as g} es8 es d |
+c2. r4 |
+r8 as'4 g8 d'4. c16 d |
+es8 d c c c2~ |
+c8 as c d c as16 g as8 c16 d |
+f,8 f g as g4 g, |
+c4. d8 es g4 d'8 |
 \time 2/4
-\appoggiatura{b16 cis} b8 g fis4~ |
-fis8 d cis fis \tuplet3/2{fis16 g fis} d8 d cis |
-b2. r4 |
-
+\appoggiatura{c16 d} c8 as g4~ |
+\time 4/4
+g8 es d g \tuplet3/2{g16 as g} es8 es d |
+c2. r4 |
 
 
 \bar "|."
 }
+\score {
+<<
+\chords {
+\set chordChanges=##t
+%
+c4:m c:m c:m c:m c:m c:m g:7 g:7 g:7 g:7 f:m f:m c:m c:m c:m c:m % 4
+c:m c:m c:m c:m c:m c:m c:m c:m c:m c:m g:7 g:7 c:m c:m c:m c:m % 8
+f:m f:m g:7 g:7 c:m c:m c:m c:m f:m f:m f:m f:m f:m f:m g:7 g:7
+c:m c:m c:m c:m f:m g:7
+c:m c:m g:7 g:7 c:m c:m c:m c:m
 
+
+
+}
+\new Staff {\melody}
+>>
+\layout {
+line-width = #190
+indent = 0\mm
+}
 \midi {}
-
 }

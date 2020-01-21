@@ -3,57 +3,73 @@
 % 別れ船(なごりつきないはてしない)
 % \index{わかれぶね@別れ船(なごりつきないはてしない)}
 
-\score {
-
-\layout {
-line-width = #170
-indent = 0\mm
+\header {
+piece = "別れ船(なごりつきないはてしない)"
 }
 
+melody =
 \relative c' {
-\key bes \major
+\key c \major
 \time 2/4
 \set Score.tempoHideNote = ##t
-\tempo 4=120
+\tempo 4=60
 \numericTimeSignature
 
-r8 d4 d8 |
-es4 d~ |
-d8 g4 g8 |
-g8 a a4~ |
-a8 d,4 d8 |
-d bes' bes a16 bes |
-a2~ |
-a4 r |
-r8 g4 g8 |
-g4 g8 a~ |
-a g4 es8 |
-es4 d8 c~ |
-c d4 d8 |
-d g bes, a |
-g2~ g4 r |
+r8 e4 e8 |
+f4 e~ |
+e8 a4 a8 |
+a8 b b4~ |
+b8 e,4 e8 |
+e c' c b16 c |
+b2~ |
+b4 r |
 r8 a4 a8 |
-a4 \tuplet3/2{a16 bes a} g8~ |
-g a4 bes8 |
-d4 d~ |
-d8 es d bes'|
-a4 g |
+a4 a8 b~ |
+b a4 f8 |
+f4 e8 d~ |
+d e4 e8 |
+e a c, b |
+a2~ a4 r |
+r8 b4 b8 |
+b4 \tuplet3/2{b16 c b} a8~ |
+a b4 c8 |
+e4 e~ |
+e8 f e c'|
+b4 a |
+b2~ |
+b4 c8 c |
+c4. c8 |
+c4 c8 b16 c |
+e4. c16 b |
 a2~ |
-a4 bes8 bes |
-bes4. bes8 |
-bes4 bes8 a16 bes |
-d4. bes16 a |
-g2~ |
-g8 a4 a8 |
-a4. bes8 |
-g4 es8 d |
-g2 |
-
+a8 b4 b8 |
+b4. c8 |
+a4 f8 e |
+a2 |
 
 
 \bar "|."
 }
+\score {
+<<
+\chords {
+\set chordChanges=##t
+%
+a4:m a:m d:m a:m a:m a:m e:7 e:7 
+a:m a:m a:m a:m e:7 e:7 e:7 e:7
+a:m a:m a:m a:m d:m d:m d:m d:m
+a:m a:m a:m e:7 a:m a:m a:m a:m
+e:7 e:7 e:7 e:7 e:7 e:7 a:m a:m
+d:m d:m d:m d:m e:7 e:7 e:7 a:m
+a:m a:m a:m a:m e:7 e:7 a:m a:m
+e:7 e:7 e:7 e:7 a:m e:7 a:m a:m
 
+}
+\new Staff {\melody}
+>>
+\layout {
+line-width = #190
+indent = 0\mm
+}
 \midi {}
-
 }
