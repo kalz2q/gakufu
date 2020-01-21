@@ -11,7 +11,7 @@ melody =
 \key c \major
 \time 2/4
 \set Score.tempoHideNote = ##t
-\tempo 4=60
+\tempo 4=70
 \numericTimeSignature
 %
 
@@ -20,6 +20,7 @@ melody =
 \score {
 <<
 \chords {
+\set noChordSymbol = ""
 \set chordChanges=##t
 %
 }
