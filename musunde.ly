@@ -2,18 +2,17 @@
 
 % むすんでひらいて(むすんでひらいててをうってむすんで)
 
-\score {
 
-\layout {
-line-width = #170
-indent = 0\mm
+\header {
+piece = "むすんでひらいて(むすんでひらいててをうってむすんで)"
 }
 
+melody =
 \relative c' {
 \key d \major
 \time 2/4
 \set Score.tempoHideNote = ##t
-\tempo 4=120
+\tempo 4=100
 \numericTimeSignature
 
 fis4 fis8 e |
@@ -46,7 +45,18 @@ d2 |
 
 \bar "|."
 }
-
+\score {
+<<
+\chords {
+\set noChordSymbol = ""
+\set chordChanges=##t
+%
+}
+\new Staff {\melody}
+>>
+\layout {
+line-width = #190
+indent = 0\mm
+}
 \midi {}
-
 }

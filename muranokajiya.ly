@@ -3,18 +3,16 @@
 % 村の鍛冶屋(しばしもやすまずつちうつひびき)
 % \index{むらのかじや@村の鍛冶屋(しばしもやすまずつちうつひびき)}
 
-\score {
-
-\layout {
-line-width = #170
-indent = 0\mm
+\header {
+piece = "村の鍛冶屋(しばしもやすまずつちうつひびき)"
 }
 
+melody =
 \relative c' {
 \key c \major
 \time 2/4
 \set Score.tempoHideNote = ##t
-\tempo 4=120
+\tempo 4=90
 \numericTimeSignature
 
 e8 g g g |
@@ -38,7 +36,25 @@ d d16 e c8 r |
 
 \bar "|."
 }
+\score {
+<<
+\chords {
+\set noChordSymbol = ""
+\set chordChanges=##t
+%
+c4 c c c g:7 g:7 c c 
+c c c c g:7 c g:7 c
+g:7 g:7 c c c c g:7 g:7 
+c c c c g:7 c g:7 c
 
+
+
+}
+\new Staff {\melody}
+>>
+\layout {
+line-width = #190
+indent = 0\mm
+}
 \midi {}
-
 }
