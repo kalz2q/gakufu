@@ -3,18 +3,16 @@
 % アラビアの唄(さばくにひがおちて)
 % \index{あらびあ@アラビアの唄(さばくにひがおちて)}
 
-\score {
-
-\layout {
-line-width = #170
-indent = 0\mm
+\header {
+piece = "アラビアの唄(さばくにひがおちて)"
 }
 
+melody =
 \relative c' {
 \key d \major
 \time 2/2
 \set Score.tempoHideNote = ##t
-\tempo 4=120
+\tempo 4=140
 \numericTimeSignature
 
 a'2. b4 |
@@ -56,7 +54,28 @@ d2. r4 |
 
 \bar "|."
 }
+\score {
+<<
+\chords {
+\set noChordSymbol = ""
+\set chordChanges=##t
+%
+d2 d d d d d d d
+a:7 a:7 a:7 a:7 d d d d
+d d d d d d d d
+a:7 a:7 a:7 a:7 d d d d
+g:m g:m g:m g:m g:m g:m g:m g:m
+d:m d:m d:m d:m d:m d:m a a
+d d d d d d d d 
+a:7 a:7 a:7 a:7 d d d d
 
+
+}
+\new Staff {\melody}
+>>
+\layout {
+line-width = #190
+indent = 0\mm
+}
 \midi {}
-
 }

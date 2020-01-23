@@ -3,18 +3,16 @@
 % 戦友(ここはおくにをなんびゃくり)
 % \index{せんゆう@戦友(ここはおくにをなんびゃくり)}
 
-\score {
-
-\layout {
-line-width = #170
-indent = 0\mm
+\header {
+piece = "戦友(ここはおくにをなんびゃくり)"
 }
 
+melody =
 \relative c' {
 \key g \minor
 \time 2/4
 \set Score.tempoHideNote = ##t
-\tempo 4=120
+\tempo 4=80
 \numericTimeSignature
 
 d8. d16 d8. d16 |
@@ -38,7 +36,24 @@ d4. r8 |
 
 \bar "|."
 }
+\score {
+<<
+\chords {
+\set noChordSymbol = ""
+\set chordChanges=##t
+%
+g4:m g:m g:m g:m d:7 g:m d:7 d:7 
+g:m g:m g:m g:m c:m c:m d:7 d:7
+g:m g:m g:m g:m c:m c:m d:7 d:7
+c:m c:m c:m c:m g:m g:m g:m g:m
 
+
+}
+\new Staff {\melody}
+>>
+\layout {
+line-width = #190
+indent = 0\mm
+}
 \midi {}
-
 }

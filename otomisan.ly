@@ -3,58 +3,74 @@
 % お富さん(いきなくろべいみこしのまつに)
 % \index{おとみさん@お富さん(いきなくろべいみこしのまつに)}
 
-\score {
-
-\layout {
-line-width = #170
-indent = 0\mm
+\header {
+piece = "お富さん(いきなくろべいみこしのまつに)"
 }
 
+melody =
 \relative c' {
-\key des \major
+\key es \major
 \time 2/4
 \set Score.tempoHideNote = ##t
-\tempo 4=120
+\tempo 4=100
 \numericTimeSignature
 
-\tuplet3/2{r4 as8} \tuplet3/2{des4 des8} |
-\tuplet3/2{des4 des8} \tuplet3/2{des4 es8} |
-\tuplet3/2{f4 as8} \tuplet3/2{f4 es8} |
-\tuplet3/2{f4 es8} 	\tuplet3/2{des4 des8} |
-\break
-\tuplet3/2{r4 es8} \tuplet3/2{es4 f8} | % 5
-\tuplet3/2{f4 es8} \tuplet3/2{es4 des8} |
-\tuplet3/2{bes4 des8} \tuplet3/2{as4 as8} |
-as2 |
-\break
-\tuplet3/2{r4 f'8} \tuplet3/2{as4 as8}
-\tuplet3/2{as4 as8} \tuplet3/2{f4 as8} |
-\tuplet3/2{bes4 des8} \tuplet3/2{as4 as8} |
-as 2 |
-\break
-\tuplet3/2{r4 bes8} \tuplet3/2{bes4 bes8} |
-\tuplet3/2{as4 as8} \tuplet3/2{bes4 as8} |
-\tuplet3/2{r4 f8} \tuplet3/2{f4 as8} |
-\tuplet3/2{f4 es8} \tuplet3/2{des4 des8} |
-\break
-\tuplet3/2{r4 es8} \tuplet3/2{es4 f8} |
-\tuplet3/2{f4 es8} \tuplet3/2{es4 des8} |
-\tuplet3/2{bes4 des8} \tuplet3/2{as4 as8} |
-as2 |
-\tuplet3/2{r4 f8} \tuplet3/2{as4 bes8} |
-\break
-des4. es8 |
-r8 f4 as8 |
-\tuplet3/2{f4 es8} des4 |
-des2~ |
-des 4 r |
+\tuplet3/2{r4 bes8} \tuplet3/2{es4 es8} |
+\tuplet3/2{es4 es8} \tuplet3/2{es4 f8} |
+\tuplet3/2{g4 bes8} \tuplet3/2{g4 f8} |
+\tuplet3/2{g4 f8} 	\tuplet3/2{es4 es8} |
+
+\tuplet3/2{r4 f8} \tuplet3/2{f4 g8} | % 5
+\tuplet3/2{g4 f8} \tuplet3/2{f4 es8} |
+\tuplet3/2{c4 es8} \tuplet3/2{bes4 bes8} |
+bes2 |
+
+\tuplet3/2{r4 g'8} \tuplet3/2{bes4 bes8}
+\tuplet3/2{bes4 bes8} \tuplet3/2{g4 bes8} |
+\tuplet3/2{c4 es8} \tuplet3/2{bes4 bes8} |
+bes 2 |
+
+\tuplet3/2{r4 c8} \tuplet3/2{c4 c8} |
+\tuplet3/2{bes4 bes8} \tuplet3/2{c4 bes8} |
+\tuplet3/2{r4 g8} \tuplet3/2{g4 bes8} |
+\tuplet3/2{g4 f8} \tuplet3/2{es4 es8} |
+
+\tuplet3/2{r4 f8} \tuplet3/2{f4 g8} |
+\tuplet3/2{g4 f8} \tuplet3/2{f4 es8} |
+\tuplet3/2{c4 es8} \tuplet3/2{bes4 bes8} |
+bes2 |
+\tuplet3/2{r4 g8} \tuplet3/2{bes4 c8} |
+
+es4. f8 |
+r8 g4 bes8 |
+\tuplet3/2{g4 f8} es4 |
+es2~ |
+es 4 r |
 
 
 
 
 \bar "|."
 }
+\score {
+<<
+\chords {
+\set noChordSymbol = ""
+\set chordChanges=##t
+%
+es4 es es es es es es es
+bes:7 bes:7 bes:7 bes:7 as es es es
+es es es es as es es es
+as as es as es es es es
+bes:7 bes:7 bes:7 bes:7 as es es es es es 
+es es bes:7 bes:7 bes:7 bes:7 es es es es
 
+}
+\new Staff {\melody}
+>>
+\layout {
+line-width = #190
+indent = 0\mm
+}
 \midi {}
-
 }

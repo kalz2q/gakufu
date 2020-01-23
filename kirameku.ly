@@ -3,18 +3,16 @@
 % 燦めく星座(おとこじゅんじょうのあいのほしのいろ)
 % \index{きらめく@燦めく星座(おとこじゅんじょうのあいのほしのいろ)}
 
-\score {
-
-\layout {
-line-width = #170
-indent = 0\mm
+\header {
+piece = "燦めく星座(おとこじゅんじょうのあいのほしのいろ)"
 }
 
+melody =
 \relative c' {
 \key c \major
 \time 4/4
 \set Score.tempoHideNote = ##t
-\tempo 4=120
+\tempo 4=90
 \numericTimeSignature
 
 \tuplet3/2{r4 g8} \tuplet3/2{c4 d8} \tuplet3/2{e4 g8} \tuplet3/2{c4 a8} |
@@ -45,7 +43,25 @@ c2 r |
 
 \bar "|."
 }
+\score {
+<<
+\chords {
+\set noChordSymbol = ""
+\set chordChanges=##t
+%
+c4 c c c c c c c c c c c c c c c 
+c c c c f f c c c c c c g g g g
+c c c c f f c c c c g:7 g:7 c c c c
+c c c c f f g:7 g:7 c c c c g:7 g:7 g:7 g:7 
+c c c c f f g:7 g:7 c c g:7 g:7 c c c c
 
+
+}
+\new Staff {\melody}
+>>
+\layout {
+line-width = #190
+indent = 0\mm
+}
 \midi {}
-
 }

@@ -3,13 +3,11 @@
 % 水戸黄門(じんせいらくありゃくもあるさ)
 % \index{みとこうもん@水戸黄門(じんせいらくありゃくもあるさ)}
 
-\score {
-
-\layout {
-line-width = #170
-indent = 0\mm
+\header {
+piece = "水戸黄門(じんせいらくありゃくもあるさ)"
 }
 
+melody =
 \relative c'' {
 \key f \major
 \time 4/4
@@ -44,7 +42,27 @@ d1 |
 
 \bar "|."
 }
+\score {
+<<
+\chords {
+\set noChordSymbol = ""
+\set chordChanges=##t
+%
+d4:m d:m d:m d:m d:m d:m d:m d:m g:m g:m a:m a:m d:m d:m d:m d:m
+a:m a:m a:m a:m a:m a:m a:m a:m bes bes bes bes d:m d:m d:m d:m
+a:7 a:7 a:7 a:7 a:7 a:7 a:7 a:7 d:m d:m d:m d:m a:7 a:7 a:7 a:7
+bes bes bes bes bes bes bes bes a:7 a:7 a:7 a:7 a:7 a:7 a:7 a:7
+bes bes bes bes bes bes bes bes bes bes bes bes
+a:m a:m a:m a:m d:m d:m d:m d:m d:m d:m d:m d:m 
 
+
+
+}
+\new Staff {\melody}
+>>
+\layout {
+line-width = #190
+indent = 0\mm
+}
 \midi {}
-
 }

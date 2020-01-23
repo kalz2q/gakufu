@@ -4,18 +4,16 @@
 % \index{はばろふすく@ハバロフスク小唄}
 
 
-\score {
-
-\layout {
-line-width = #170
-indent = 0\mm
+\header {
+piece = "ハバロフスク小唄"
 }
 
+melody =
 \relative c' {
 \key c \minor
 \time 6/8
 \set Score.tempoHideNote = ##t
-\tempo 4=120
+\tempo 4=110
 \numericTimeSignature
 
 g4 c8 c4 c8 |
@@ -50,7 +48,27 @@ c8 r r r4 r8 |
 
 \bar "|."
 }
+\score {
+<<
+\chords {
+\set noChordSymbol = ""
+\set chordChanges=##t
+%
+c4.:m c:m c:m g:7 c:m c:m c:m f:m
+f:m f:m f:m f:m g:7 g:7 g:7 g:7
+c:m c:m f:m f:m c:m c:m c:m c:m
+c:m c:m c:m c:m g:7 g:7 g:7 g:7
+c:m c:m c:m c:m f:m f:m f:m f:m
+g:7 g:7 g:7 g:7 c:m c:m f:m f:m
+c:m c:m c:m g:7 c:m c:m c:m c:m
 
+
+}
+\new Staff {\melody}
+>>
+\layout {
+line-width = #190
+indent = 0\mm
+}
 \midi {}
-
 }

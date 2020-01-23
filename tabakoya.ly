@@ -3,18 +3,16 @@
 % たばこやの娘(むこうよこちょうのたばこやの)
 % \index{たばこ@たばこやの娘(むこうよこちょうのたばこやの)}
 
-\score {
-
-\layout {
-line-width = #170
-indent = 0\mm
+\header {
+piece = "たばこやの娘(むこうよこちょうのたばこやの)"
 }
 
+melody =
 \relative c' {
 \key c \major
 \time 4/4
 \set Score.tempoHideNote = ##t
-\tempo 4=120
+\tempo 4=100
 \numericTimeSignature
 
 e4 e e8. d16 e8. f16 |
@@ -40,7 +38,25 @@ c2. r4 |
 
 \bar "|."
 }
+\score {
+<<
+\chords {
+\set noChordSymbol = ""
+\set chordChanges=##t
+%
+c4 c c c c c c c g:7 g:7 g:7 g:7
+c c c c c c c c c c c c
+c c g:7 g:7 c c c c g:7 g:7 g:7 g:7
+c c c c d:7 d:7 d:7 d:7 g:7 g:7 g:7 g:7
+c c c c c c c c c c g:7 g:7 c c c c
 
+
+}
+\new Staff {\melody}
+>>
+\layout {
+line-width = #190
+indent = 0\mm
+}
 \midi {}
-
 }

@@ -3,18 +3,16 @@
 % 蛍の光(ほたるのひかりまどのゆき)
 % \index{ほたるのひかり@蛍の光(ほたるのひかりまどのゆき)}
 
-\score {
-
-\layout {
-line-width = #170
-indent = 0\mm
+\header {
+piece = "蛍の光(ほたるのひかりまどのゆき)"
 }
 
+melody =
 \relative c' {
 \key f \major
 \time 4/4
 \set Score.tempoHideNote = ##t
-\tempo 4=120
+\tempo 4=100
 \numericTimeSignature
 \partial 4
 
@@ -43,7 +41,24 @@ f2. |
 
 \bar "|."
 }
+\score {
+<<
+\chords {
+\set noChordSymbol = ""
+\set chordChanges=##t
+%
+f4 f f f f c:7 c:7 c:7 c:7 f f f f bes bes bes bes
+f f f f c:7 c:7 c:7 d:m bes bes c:7 c:7 f f f bes
+f f f f c:7 c:7 c:7 c:7 f f f f:7 bes bes bes bes
+f f f f c:7 c:7 c:7 d:m  bes bes c:7 c:7 f f f 
 
+
+}
+\new Staff {\melody}
+>>
+\layout {
+line-width = #190
+indent = 0\mm
+}
 \midi {}
-
 }

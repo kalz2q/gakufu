@@ -3,51 +3,69 @@
 % 麦と兵隊(じょしゅうじょしゅうとじんばはすすむ)
 % \index{むぎと@麦と兵隊(じょしゅうじょしゅうとじんばはすすむ)}
 
-\score {
-
-\layout {
-line-width = #170
-indent = 0\mm
+\header {
+piece = "麦と兵隊(じょしゅうじょしゅうとじんばはすすむ)"
 }
 
+melody =
 \relative c' {
-\key bes \major
+\key c \major
 \time 2/4
 \set Score.tempoHideNote = ##t
-\tempo 4=120
+\tempo 4=70
 \numericTimeSignature
 
-d16 d8. d4 |
-es16 d8. g8. a16 |
-bes16 bes8. a8. g16 |
-es16 es8. d4 |
-g16 g8. es4 |
-d16 d8. bes8. g16 |
-a16 a8. d8. d16 |
-d4. r8 |
+e16 e8. e4 |
+f16 e8. a8. b16 |
+c16 c8. b8. a16 |
+f16 f8. e4 |
+a16 a8. f4 |
+e16 e8. c8. a16 |
+b16 b8. e8. e16 |
+e4. r8 |
 \break
-g16 g8. g4 |
-a16 a8. g8. a16 |
-bes16 d8. d8. bes16 |
-a4.. bes16|
-g4 es8. d16 |
-bes16 bes8. d8. a'16 |
-\tuplet3/2{g8 es d} bes8. a16 |
-d4 es8. d16 |
+a16 a8. a4 |
+b16 b8. a8. b16 |
+c16 e8. e8. c16 |
+b4.. c16|
+a4 f8. e16 |
+c16 c8. e8. b'16 |
+\tuplet3/2{a8 f e} c8. b16 |
+e4 f8. e16 |
 \break
-g4.. a16 |
-bes8. a16 \tuplet3/2{g8 a bes} |
-d2~ |
-d4 d,4 |
-g4~ g8. a16 |
-\tuplet3/2{bes8 a d} bes8. a16 |
-g2~ |
-g4 r |
+a4.. b16 |
+c8. b16 \tuplet3/2{a8 b c} |
+e2~ |
+e4 e,4 |
+a4~ a8. b16 |
+\tuplet3/2{c8 b e} c8. b16 |
+a2~ |
+a4 r |
 
 
 \bar "|."
 }
+\score {
+<<
+\chords {
+\set noChordSymbol = ""
+\set chordChanges=##t
+%
+a4:m a:m a:m a:m a:m a:m d:m e:7
+d:m d:m a:m a:m e:7 e:7 e:7 e:7
+a:m a:m e:7 e:7 a:m a:m e:7 e:7
+d:m d:m a:m a:m d:m a:m e:7 e:7
+a:m a:m a:m a:m e:7 e:7 e:7 e:7
+a:m a:m a:m e:7 a:m a:m a:m a:m
 
+
+
+}
+\new Staff {\melody}
+>>
+\layout {
+line-width = #190
+indent = 0\mm
+}
 \midi {}
-
 }

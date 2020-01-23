@@ -3,45 +3,61 @@
 % 人を恋うる歌(つまをめとらばさいたけて)
 % \index{ひとをこうる@人を恋うる歌(つまをめとらばさいたけて)}
 
-\score {
-
-\layout {
-line-width = #170
-indent = 0\mm
+\header {
+piece = "人を恋うる歌(つまをめとらばさいたけて)"
 }
 
+melody =
 \relative c' {
-\key es \major
+\key f \major
 \time 2/4
 \set Score.tempoHideNote = ##t
-\tempo 4=120
+\tempo 4=70
 \numericTimeSignature
-g16 g8. c8. d16 |
-es16 d8. c8. d16 |
-es16 es8. g8. c,16 |
+a16 a8. d8. e16 |
+f16 e8. d8. e16 |
+f16 f8. a8. d,16 |
+e2 |
+
+f16 e8. d8. f16 |
+a16 a8. f4 |
+e16 d8. f8. e16 |
 d2 |
-\break
-es16 d8. c8. es16 |
-g16 g8. es4 |
-d16 c8. es8. d16 |
-c2 |
-\break
-g'16 g8. as8. c16 |
-d16 c8. as8. g16 |
-es16 es8. g8. as16 |
-g2 |
-\break
-g16 g8. es8. c16 |
-c'4 as |
-g16 g8. es8. d16 |
-c2 |
+
+a'16 a8. bes8. d16 |
+e16 d8. bes8. a16 |
+f16 f8. a8. bes16 |
+a2 |
+
+a16 a8. f8. d16 |
+d'4 bes |
+a16 a8. f8. e16 |
+d2 |
 
 
 
 
 \bar "|."
 }
+\score {
+<<
+\chords {
+\set noChordSymbol = ""
+\set chordChanges=##t
+%
+d4:m d:m d:m d:m d:m d:m a a
+d:m d:m d:m d:m g:m a:7 d:m d:m
+d:m g:m g:m g:m7 d:m d:m a:7 a:7
+d:m d:m g:m g:m d:m a:7
+d:m d:m
 
+
+}
+\new Staff {\melody}
+>>
+\layout {
+line-width = #190
+indent = 0\mm
+}
 \midi {}
-
 }
