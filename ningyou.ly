@@ -3,18 +3,16 @@
 % 人形(わたしのにんぎょうはよいにんぎょう)
 % \index{にんぎょう@人形(わたしのにんぎょうはよいにんぎょう)}
 
-\score {
-
-\layout {
-line-width = #170
-indent = 0\mm
+\header {
+piece = "人形(わたしのにんぎょうはよいにんぎょう)"
 }
 
+melody =
 \relative c' {
 \key f \major
 \time 4/4
 \set Score.tempoHideNote = ##t
-\tempo 4=120
+\tempo 4=100
 \numericTimeSignature
 
 f f g g |
@@ -35,9 +33,29 @@ c a g g |
 f2. r4 |
 
 
+
+
 \bar "|."
 }
+\score {
+<<
+\chords {
+\set noChordSymbol = ""
+\set chordChanges=##t
+%
+f4 f c:7 c:7 f f f f f f f f f f f f
+f f bes bes f f f f f f f f c:7 c:7 c:7 c:7
+f f f f f f f f f f bes bes c:7 c:7 c:7 c:7
+f f c:7 c:7 f f f f f f c:7 c:7 f f f f
 
+
+
+}
+\new Staff {\melody}
+>>
+\layout {
+line-width = #190
+indent = 0\mm
+}
 \midi {}
-
 }

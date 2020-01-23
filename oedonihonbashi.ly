@@ -3,18 +3,16 @@
 % お江戸日本橋(おえどにほんばしななつだち)
 % \index{おえどにほんばし@お江戸日本橋(おえどにほんばしななつだち)}
 
-\score {
-
-\layout {
-line-width = #170
-indent = 0\mm
+\header {
+piece = "お江戸日本橋(おえどにほんばしななつだち)"
 }
 
+melody =
 \relative c'' {
 \key f \major
 \time 4/4
 \set Score.tempoHideNote = ##t
-\tempo 4=120
+\tempo 4=100
 \numericTimeSignature
 
 r4 a bes a |
@@ -39,7 +37,24 @@ a1 |
 
 \bar "|."
 }
+\score {
+<<
+\chords {
+\set noChordSymbol = ""
+\set chordChanges=##t
+%
+d4:m d:m d:m d:m g:m g:m g:m g:m g:m g:m g:m g:m a:7 a:7 a:7 a:7
+a:7 a:7 a:7 a:7 a:7 a:7 a:7 a:7 d:m d:m d:m d:m d:m d:m g:m g:m
+d:m d:m d:m d:m a:7 a:7 a:7 a:7 g:m g:m g:m g:m d:m d:m a:7 a:7
+d:m d:m d:m d:m g:m g:m g:m g:m d:m d:m g: g:m d:m d:m g:m g:m a:7 a:7 a:7 a:7
 
+
+}
+\new Staff {\melody}
+>>
+\layout {
+line-width = #190
+indent = 0\mm
+}
 \midi {}
-
 }

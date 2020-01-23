@@ -2,19 +2,16 @@
 
 % こうま(はいしいはいしいあゆめよこうま)
 % \index{こうま@こうま(はいしいはいしいあゆめよこうま)}
-
-\score {
-
-\layout {
-line-width = #170
-indent = 0\mm
+\header {
+piece = "こうま(はいしいはいしいあゆめよこうま)"
 }
 
+melody =
 \relative c'' {
 \key c \major
 \time 2/4
 \set Score.tempoHideNote = ##t
-\tempo 4=120
+\tempo 4=70
 \numericTimeSignature
 
 g8 r c, r |
@@ -39,7 +36,24 @@ e d c r |
 
 \bar "|."
 }
+\score {
+<<
+\chords {
+\set noChordSymbol = ""
+\set chordChanges=##t
+%
+c4 c c c c c g g 
+c c c c g g c c 
+g g c c c c c c
+c c c c g g c c
 
+
+}
+\new Staff {\melody}
+>>
+\layout {
+line-width = #190
+indent = 0\mm
+}
 \midi {}
-
 }

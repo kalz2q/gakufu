@@ -3,18 +3,16 @@
 % 兎のダンス(タラッタラッタラッタ)
 % \index{うさぎ@兎のダンス(タラッタラッタラッタ)}
 
-\score {
-
-\layout {
-line-width = #170
-indent = 0\mm
+\header {
+piece = "兎のダンス(タラッタラッタラッタ)"
 }
 
+melody =
 \relative c' {
 \key a \major
-\time 4/4
+\time 2/4
 \set Score.tempoHideNote = ##t
-\tempo 4=120
+\tempo 4=90
 \numericTimeSignature
 
 r8. cis16 e8. fis16 |%1
@@ -41,7 +39,24 @@ fis8. b16 a4 |%16
 
 \bar "|."
 }
+\score {
+<<
+\chords {
+\set noChordSymbol = ""
+\set chordChanges=##t
+%
+a4 a a a a a d e:7
+a a a a d d e:7 e:7
+a a a a a a e:7 e:8
+a a a a a d e:7 a
 
+
+}
+\new Staff {\melody}
+>>
+\layout {
+line-width = #190
+indent = 0\mm
+}
 \midi {}
-
 }

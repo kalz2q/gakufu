@@ -3,18 +3,16 @@
 % あの町この町(あのまちこのまちひがくれる)
 % \index{あのまち@あの町この町(あのまちこのまちひがくれる)}
 
-\score {
-
-\layout {
-line-width = #170
-indent = 0\mm
+\header {
+piece = "あの町この町(あのまちこのまちひがくれる)"
 }
 
+melody =
 \relative c' {
 \key c \minor
 \time 2/4
 \set Score.tempoHideNote = ##t
-\tempo 4=120
+\tempo 4=70
 \numericTimeSignature
 
 c8 c c bes |
@@ -36,7 +34,24 @@ c4. r8 |
 
 \bar "|."
 }
+\score {
+<<
+\chords {
+\set noChordSymbol = ""
+\set chordChanges=##t
+%
+c4:m c:m c:m c:m g:7 g:7 c:m c:m
+g:7 g:7 c:m c:m g:7 g:7 g:7 g:7 
+f:m g:7 c:m c:m f:m g:7 c:m c:m
 
+
+
+}
+\new Staff {\melody}
+>>
+\layout {
+line-width = #190
+indent = 0\mm
+}
 \midi {}
-
 }

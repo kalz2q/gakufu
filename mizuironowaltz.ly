@@ -3,18 +3,16 @@
 % 水色のワルツ(きみにあううれしさの)
 % \index{みずいろの@水色のワルツ(きみにあううれしさの)}
 
-\score {
-
-\layout {
-line-width = #170
-indent = 0\mm
+\header {
+piece = "水色のワルツ(きみにあううれしさの)"
 }
 
+melody =
 \relative c' {
 \key d \minor
 \time 3/4
 \set Score.tempoHideNote = ##t
-\tempo 4=120
+\tempo 4=100
 \numericTimeSignature
 \partial 4
 
@@ -57,7 +55,28 @@ d2
 
 \bar "|."
 }
+\score {
+<<
+\chords {
+\set noChordSymbol = ""
+\set chordChanges=##t
+%
+r4 d:m d:m d:m g:m g:m g:m a:7 a:7 a:7 d:m d:m d:m
+d:m d:m d:m d:7 d:7 d:7 g:m g:m g:m g:m g:m g:m
+g:m g:m g:m d:m d:m d:m a:7 a:7 a:7 bes bes bes
+d:m d:m d:m a:7 a:7 a:7 d:m d:m d:m d:m d:m d:m
+d:m d:m d:m g:m g:m g:m d:m d:m d:m d:m d:m d:m
+g:m g:m g:m g:m g:m g:m a:7 a:7 a:7 a:7 a:7 a:7
+d:m d:m d:m g:m g:m g:m a:7 a:7 a:7 d:m d:m d:m
+a:7 a:7 a:7 d:m d:m a:7 d:m d:m d:m d:m d:m
 
+
+}
+\new Staff {\melody}
+>>
+\layout {
+line-width = #190
+indent = 0\mm
+}
 \midi {}
-
 }

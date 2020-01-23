@@ -3,18 +3,16 @@
 % 啼くな小鳩よ(なくなこばとよこころのつまよ)
 % \index{なくなこばと@啼くな小鳩よ(なくなこばとよこころのつまよ)}
 
-\score {
-
-\layout {
-line-width = #170
-indent = 0\mm
+\header {
+piece = "啼くな小鳩よ(なくなこばとよこころのつまよ)"
 }
 
+melody =
 \relative c' {
 \key bes \major
 \time 2/4
 \set Score.tempoHideNote = ##t
-\tempo 4=120
+\tempo 4=80
 \numericTimeSignature
 
 d8. es16 d8. bes16 |
@@ -54,7 +52,27 @@ g4 r |
 
 \bar "|."
 }
+\score {
+<<
+\chords {
+\set noChordSymbol = ""
+\set chordChanges=##t
+%
+g4:m g:m g:m g:m g:m g:m g:m g:m
+c:m c:m g:m g:m d:7 d:7 d:7 d:7
+g:m g:m g:m g:m d:7 d:7 g:m g:m
+c:m c:m g:m d:7 g:m g:m g:m g:m
+g:m g:m g:m g:m c:m c:m d:7 d:7
+g:m g:m c:m c:m d:7 d:7 d:7 d:7
+g:m g:m g:m g:m g:m g:m g:m g:m
+c:m c:m d:7 d:7 g:m g:m g:m g:m
 
+}
+\new Staff {\melody}
+>>
+\layout {
+line-width = #190
+indent = 0\mm
+}
 \midi {}
-
 }

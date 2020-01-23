@@ -3,18 +3,16 @@
 % かなりや(うたをわすれたかなりやは)
 % \index{かなりや@かなりや(うたをわすれたかなりやは)}
 
-\score {
-
-\layout {
-line-width = #170
-indent = 0\mm
+\header {
+piece = "かなりや(うたをわすれたかなりやは)"
 }
 
+melody =
 \relative c' {
 \key a \major
 \time 2/4
 \set Score.tempoHideNote = ##t
-\tempo 4=120
+\tempo 4=60
 \numericTimeSignature
 
 cis8. e16 fis8 e |
@@ -62,10 +60,34 @@ e16 e cis8 cis |
 a4 r8 |
 
 
-
 \bar "|."
 }
+\score {
+<<
+\chords {
+\set noChordSymbol = ""
+\set chordChanges=##t
+%
+a4 a a a e:7 a a a
+d d a a a d d d
+a a a a a e:7 e:7 e:7
+a a a a e:7 a a a
+d d a a a d d d
+a a a a a e:7 a
+r8 r r r
+d d d d d d d e:7 e:7 a a a
+a a a a a a a a a a a a
+a a a  a a a d d d d d d
+d d d d a a e:7 a a a a a
 
+
+
+}
+\new Staff {\melody}
+>>
+\layout {
+line-width = #190
+indent = 0\mm
+}
 \midi {}
-
 }

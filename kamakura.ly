@@ -3,13 +3,11 @@
 % 鎌倉(しちりがはまのいそづたい)
 % \index{かまくら@鎌倉(しちりがはまのいそづたい)}
 
-\score {
-
-\layout {
-line-width = #170
-indent = 0\mm
+\header {
+piece = "鎌倉(しちりがはまのいそづたい)"
 }
 
+melody =
 \relative c'' {
 \key g \major
 \time 4/4
@@ -30,10 +28,25 @@ g4.~ g8 g4 a |
 b4. b8 b,4. b8 |
 e2. r4 |
 
-
 \bar "|."
 }
+\score {
+<<
+\chords {
+\set noChordSymbol = ""
+\set chordChanges=##t
+%
+e4:m e:m e:m e:m b:7 b:7 b:7 b:7 c c c c b:7 b:7 b:7 b:7
+e:m e:m e:m e:m b:7 b:7 b:7 b:7 b:7 b:7 b:7 b:7 e:m e:m e:m e:m
+e:m e:m e:m e:m e:m e:m e:m e:m b:7 b:7 b:7 b:7 e:m e:m e:m e:m
 
+
+}
+\new Staff {\melody}
+>>
+\layout {
+line-width = #190
+indent = 0\mm
+}
 \midi {}
-
 }

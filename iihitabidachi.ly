@@ -3,66 +3,79 @@
 % いい日旅立ち(ゆきどけまじかの)
 % \index{いいひ@いい日旅立ち(ゆきどけまじかの)}
 
-\score {
 
-\layout {
-line-width = #170
-indent = 0\mm
+\header {
+piece = "いい日旅立ち(ゆきどけまじかの)"
 }
 
+melody =
 \relative c' {
-\key es \major
+\key f \major
 \time 4/4
 \set Score.tempoHideNote = ##t
-\tempo 4=120
+\tempo 4=90
 \numericTimeSignature
 
-r2 r4 r8 g |
-c4 es8 g~ g4. g,8 |
-b4 d8 g~ g2 |
-r8 g as g bes bes4 as8 |
-g f g f~ f2 |
+r2 r4 r8 a |
+d4 f8 a~ a4. a,8 |
+cis4 e8 a~ a2 |
+r8 a bes a c c4 bes8 |
+a g a g~ g2 |
 \break
-r8 f g as bes bes bes as | % 6
-g f es g~ g2 |
-d4 es f8 g4 d8~ |
-d2. r8 g, |
+r8 g a bes c c c bes | % 6
+a g f a~ a2 |
+e4 f g8 a4 e8~ |
+e2. r8 a, |
 \break
-c4 es8 g~ g4. g,8 | % 10
-b4 d8 g~ g2 |
-r8 g as g bes bes4 as8 |
-g f g f8~ f2 |
+d4 f8 a~ a4. a,8 | % 10
+cis4 e8 a~ a2 |
+r8 a bes a c c4 bes8 |
+a g a g8~ g2 |
 \break
-r8 f g as bes bes bes as | % 14
-g f es f16 g~ g2 |
-d4 es b8 d4 c8~ |
-c1~ |
+r8 g a bes c c c bes | % 14
+a g f g16 a~ a2 |
+e4 f cis8 e4 d8~ |
+d1~ |
 \break
-c2. r8 c | % 18
-as'1 |
-r8 as bes c16 d~d8 c bes as16 g~ |
-g1~ |
-g2. g8 g |
+d2. r8 d | % 18
+bes'1 |
+r8 bes c d16 e~e8 d c bes16 a~ |
+a1~ |
+a2. a8 a |
 \break
-f8 f4.~ f8 f f g | % 23
-as2 as8 as f as |
-g1~ |
-g4 r r2 |
+g8 g4.~ g8 g g a | % 23
+bes2 bes8 bes g bes |
+a1~ |
+a4 r r2 |
 \break
-c,4 es8 g~ g4. g,8 | % 27
-b4 d8 g~ g2 |
-r8 g as g bes bes4 as8 |
-g f g f~ f2 |
+d,4 f8 a~ a4. a,8 | % 27
+cis4 e8 a~ a2 |
+r8 a bes a c c4 bes8 |
+a g a g~ g2 |
 \break
-r8 f g as bes bes bes as |
-g f4 es8~ es4 d8 c |
-d4. es8 \tuplet3/2{f4 es d} |
-c2. r4 |
+r8 g a bes c c c bes |
+a g4 f8~ f4 e8 d |
+e4. f8 \tuplet3/2{g4 f e} |
+d2. r4 |
 
 
 \bar "|."
 }
+\score {
+<<
+\chords {
+\set noChordSymbol = ""
+\set chordChanges=##t
+%
+d4:m d:m d:m d4:m d:m d:m d,:m a:7 a:7 a:7 a:7 d:m d:m d:m d:m g:m g:m g:m g:m
 
+
+}
+\new Staff {\melody}
+>>
+\layout {
+line-width = #190
+indent = 0\mm
+}
 \midi {}
-
 }

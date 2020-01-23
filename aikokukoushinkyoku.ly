@@ -3,18 +3,16 @@
 % 愛国行進曲(みよとうかいのそらあけて)
 % \index{あいこく@愛国行進曲(みよとうかいのそらあけて)}
 
-\score {
-
-\layout {
-line-width = #170
-indent = 0\mm
+\header {
+piece = "愛国行進曲(みよとうかいのそらあけて)"
 }
 
+melody =
 \relative c' {
 \key f \major
 \time 2/4
 \set Score.tempoHideNote = ##t
-\tempo 4=120
+\tempo 4=90
 \numericTimeSignature
 
 c8. bes16 a8 c |
@@ -61,7 +59,28 @@ f8 r r4 |
 
 \bar "|."
 }
+\score {
+<<
+\chords {
+\set noChordSymbol = ""
+\set chordChanges=##t
+%
+f4 f f c:7 f f f f bes bes 
+f f c:7 c:7 c:7 c:7 f f f f
+f bes f f f f f f c:7 c:7
+f f f f f f f f c f
+bes bes f f c:7 c:7 c:7 c:7 f f
+f c:7 f f f f bes bes f f
+c:7 c:7 c:7 f bes bes bes bes f f
+f f f f c:7 c:7 f f f f
 
+
+}
+\new Staff {\melody}
+>>
+\layout {
+line-width = #190
+indent = 0\mm
+}
 \midi {}
-
 }
