@@ -3,18 +3,16 @@
 % 三百六十五歩のマーチ(しあわせはあるいてこない)
 % \index{さんびゃく@三百六十五歩のマーチ(しあわせはあるいてこ}ない)
 
-\score {
-
-\layout {
-line-width = #170
-indent = 0\mm
+\header {
+piece = "三百六十五歩のマーチ(しあわせはあるいてこない)"
 }
 
+melody =
 \relative c' {
 \key c \major
 \time 4/4
 \set Score.tempoHideNote = ##t
-\tempo 4=120
+\tempo 4=100
 \numericTimeSignature
 
 \tuplet3/2{c4 c8} \tuplet3/2{c4 e8} g2 |
@@ -48,7 +46,25 @@ c,2. r4 |
 
 \bar "|."
 }
-
+\score {
+<<
+\chords {
+\set noChordSymbol = ""
+\set chordChanges=##t
+%
+c4 c c c c c c c
+g:7 g:7 g:7 g:7 c c g:7 g:7 c c c c
+c c c c  g:7 g:7 g:7  g:7 c g:7 c c
+f f c c f f c c f:m f:m f:m f:m
+f:m  f:m g:7 g:7 c:m c:m c:m c:m c:m c:m g:7 g:7
+c:m c:m f:m f:m c:m g:7 c:m c:m c c c c
+g:7 g:7 g:7 g:7 c c g: g:7 c c c c
+}
+\new Staff {\melody}
+>>
+\layout {
+line-width = #190
+indent = 0\mm
+}
 \midi {}
-
 }

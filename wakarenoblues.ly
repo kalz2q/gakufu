@@ -3,18 +3,16 @@
 % 別れのブルース(まどをあければ)
 % \index{わかれの@別れのブルース(まどをあければ)}
 
-\score {
-
-\layout {
-line-width = #170
-indent = 0\mm
+\header {
+piece = "別れのブルース(まどをあければ)"
 }
 
+melody =
 \relative c' {
 \key c \minor
 \time 4/4
 \set Score.tempoHideNote = ##t
-\tempo 4=120
+\tempo 4=100
 \numericTimeSignature
 
 \tuplet3/2{r4 g8} \tuplet3/2{c4 d8} \tuplet3/2{es4 d8~} \tuplet3/2{d4 b8} |
@@ -46,9 +44,30 @@ g1 |
 \tuplet3/2{r4 c,8} \tuplet3/2{d4 es8} g4 \tuplet3/2{g,4 d'8} |
 c2. r4 |
 
+
 \bar "|."
 }
+\score {
+<<
+\chords {
+\set noChordSymbol = ""
+\set chordChanges=##t
+%
+c4:m c:m c:m c:m c:m c:m c:m c:m f:m f:m f:m f:m c:m c:m c:m c:m 
+c:m c:m c:m c:m c:m c:m c:m c:m c:m c:m g:7 g:7 c:m c:m c:m c:m 
+c:m c:m c:m c:m f:m f:m c:m c:m c:m c:m c:m c:m c:m c:m g:7 g:7
+c:m c:m c:m c:m c:m c:m c:m c:m c:m c:m g:7 g:7 c:m c:m c:m c:m 
+c:m c:m c:m c:m c:m c:m c:m c:m c:m c:m c:m c:m g:7 g:7 g:7 g:7
+c:m c:m f:m f:m c:m c:m c:m c:m c:m c:m g:7 g:7 c:m c:m c:m c:m 
 
+
+
+}
+\new Staff {\melody}
+>>
+\layout {
+line-width = #190
+indent = 0\mm
+}
 \midi {}
-
 }

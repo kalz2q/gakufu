@@ -3,66 +3,86 @@
 % 影を慕いて(まぼろしのかげをしたいて)
 % \index{かげをしたいて@影を慕いて(まぼろしのかげをしたいて)}
 
-\score {
-
-\layout {
-line-width = #170
-indent = 0\mm
+\header {
+piece = "影を慕いて(まぼろしのかげをしたいて)"
 }
 
+melody =
 \relative c' {
-\key c \major
+\key d \major
 \time 3/4
 \set Score.tempoHideNote = ##t
-\tempo 4=120
+\tempo 4=100
 \numericTimeSignature
 
-a2 a4 |
-c2 b4 |
-e2.~
-e2 r4 |
-f4. a8 f4 | % 5
-f2 e4 |
-a,2 a4 |
-a b c |
-\break
-b2 c4 |% 9
-e c a |
-b 2.~ |
-b2 r4 |
-a2 f4 | % 13
-a2 b4 |
-c4. e8 c b |
-e2. |
-\break
-f4. e8 d e | % 17
-f2 a4 |
+b2 b4 |
+d2 cis4 |
+fis2.~
+fis2 r4 |
+g4. b8 g4 | % 5
+g2 fis4 |
+b,2 b4 |
+b cis d |
+
+cis2 d4 |% 9
+fis d b |
+cis 2.~ |
+cis2 r4 |
+b2 g4 | % 13
+b2 cis4 |
+d4. fis8 d cis |
+fis2. |
+
+g4. fis8 e fis | % 17
+g2 b4 |
+cis2.~ |
+cis2 r4 |
+d2 d4 |
+d b cis |
+d4. e8 d cis |
+b2 g4 |
+
+fis4. fis8 d cis |
+b4 cis d |
+cis2.~ |
+cis2 r4 |
+d4. cis8 b cis |
+d2 fis4 |
+g2 b4 |
+cis2 d4 |
+
+fis,4. b8 g fis |
+d2 cis4 |
 b2.~ |
-b2 r4 |
-c2 c4 |
-c a b |
-c4. d8 c b |
-a2 f4 |
-\break
-e4. e8 c b |
-a4 b c |
-b2.~ |
-b2 r4 |
-c4. b8 a b |
-c2 e4 |
-f2 a4 |
-b2 c4 |
-\break
-e,4. a8 f e |
-c2 b4 |
-a2.~ |
-a2.
+b2.
 
 
 
 \bar "|."
 }
+\score {
+<<
+\chords {
+\set noChordSymbol = ""
+\set chordChanges=##t
+%
+b2.:m b:m b:m b:m 
+e:m e:m b:m b:m 
+fis:7 b:m fis:7 fis:7 
+b:m b:m b:m b:m 
+e:m e:m fis:7 fis:7 
+b:m b:m g e:m
+fis:7 b:m fis:7 fis:7 
+b:m b:m e:m fis2:7 b4:m 
+b2.:m b2:m fis4:7 b2.:m b:m 
 
+
+}
+\new Staff {\melody}
+>>
+\layout {
+line-width = #190
+indent = 0\mm
+}
 \midi {}
-
 }

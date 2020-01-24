@@ -3,18 +3,16 @@
 % 桑港のチャイナタウン(さんふらんしすこのちゃいなたうん)
 % \index{さんふらん@桑港のチャイナタウン(さんふらんしすこのちゃいなたうん)}
 
-\score {
-
-\layout {
-line-width = #170
-indent = 0\mm
+\header {
+piece = "桑港のチャイナタウン(さんふらんしすこのちゃいなたうん)"
 }
 
+melody =
 \relative c' {
 \key g \major
 \time 2/2
 \set Score.tempoHideNote = ##t
-\tempo 4=120
+\tempo 4=130
 \numericTimeSignature
 
 d4. d8 b4 d |
@@ -55,7 +53,27 @@ g1 |
 
 \bar "|."
 }
+\score {
+<<
+\chords {
+\set noChordSymbol = ""
+\set chordChanges=##t
+%
+g2 g c c g g d:7 d:7
+c c g g c c c c 
+g g g g g g c c
+g g d:7 d:7 g d:7 g g
+d:7 d:7 g g d:7 d:7 g g
+g g c g c c g g
+g g g g c c c c
+g g g g g d:7 g g
 
+}
+\new Staff {\melody}
+>>
+\layout {
+line-width = #190
+indent = 0\mm
+}
 \midi {}
-
 }

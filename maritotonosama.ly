@@ -3,18 +3,16 @@
 % 鞠と殿さま(てんてんてんまりてんてまり)
 % \index{まりと@鞠と殿さま(てんてんてんまりてんてまり)}
 
-\score {
-
-\layout {
-line-width = #170
-indent = 0\mm
+\header {
+piece = " 鞠と殿さま(てんてんてんまりてんてまり)"
 }
 
+melody =
 \relative c' {
 \key d \minor
 \time 2/4
 \set Score.tempoHideNote = ##t
-\tempo 4=120
+\tempo 4=90
 \numericTimeSignature
 
 d8 d c c |
@@ -44,7 +42,25 @@ a4 c d r |
 
 \bar "|."
 }
+\score {
+<<
+\chords {
+\set noChordSymbol = ""
+\set chordChanges=##t
+%
+d4:m d:m d:m d:m d:m d:m d:m d:m 
+d:m d:m d:m d:m d:m d:m d:m d:m 
+d:m d:m d:m d:m d:m d:m d:m d:m 
+d:m d:m d:m d:m d:m d:m d:m d:m 
+f f c c f f f f bes bes f f d:m c:7 d:m d:m
 
+
+}
+\new Staff {\melody}
+>>
+\layout {
+line-width = #190
+indent = 0\mm
+}
 \midi {}
-
 }

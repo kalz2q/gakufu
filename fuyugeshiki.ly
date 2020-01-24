@@ -3,18 +3,16 @@
 % 冬景色(さぎりきゆるみなとえの)
 % \index{ふゆげしき@冬景色(さぎりきゆるみなとえの)}
 
-\score {
-
-\layout {
-line-width = #170
-indent = 0\mm
+\header {
+piece = "冬景色(さぎりきゆるみなとえの)"
 }
 
+melody =
 \relative c' {
 \key f \major
 \time 3/4
 \set Score.tempoHideNote = ##t
-\tempo 4=120
+\tempo 4=100
 \numericTimeSignature
 
 f a c |
@@ -38,7 +36,23 @@ f2 r4
 
 \bar "|."
 }
+\score {
+<<
+\chords {
+\set noChordSymbol = ""
+\set chordChanges=##t
+%
+f4 f f f f f c:7 c:7 c:7 c:7 c:7 c:7 
+c:7 c:7 c:7 f f f f f c:7 f f f
+c:7 c:7 c:7  f f f bes bes bes c:7 c:7 c:7 
+f f f c:7 c:7 c:7 f f c:7 f f f
 
+}
+\new Staff {\melody}
+>>
+\layout {
+line-width = #190
+indent = 0\mm
+}
 \midi {}
-
 }

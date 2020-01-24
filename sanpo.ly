@@ -3,18 +3,16 @@
 % さんぽ(あるこうあるこうわたしはげんき)
 % \index{さんぽ@さんぽ(あるこうあるこうわたしはげんき)}
 
-\score {
-
-\layout {
-line-width = #170
-indent = 0\mm
+\header {
+piece = "さんぽ(あるこうあるこうわたしはげんき)"
 }
 
+melody =
 \relative c' {
 \key c \major
 \time 4/4
 \set Score.tempoHideNote = ##t
-\tempo 4=120
+\tempo 4=100
 \numericTimeSignature
 
 e g c2 |
@@ -44,7 +42,26 @@ c2. r4 |
 
 \bar "|."
 }
+\score {
+<<
+\chords {
+\set noChordSymbol = ""
+\set chordChanges=##t
+%
+c4 c c c g:7 g:7 g:7 g:7 c c a:m a:m d:m d:m g:7 g:7
+f f f f e:m e:m e:m e:m d:m7 d:m7 g:7 g:7 c c c c
+f:m f:m f:m f:m c c c c f:m f:m f:m f:m c c c c
+a:m a:m e:m e:m f f f f d:7 d:7 d:7 d:7 g:7 g:7 g:7 g:7
+c c c c e:m e:m e:m e:m f f g:7 g:7 c c c c
 
+
+
+}
+\new Staff {\melody}
+>>
+\layout {
+line-width = #190
+indent = 0\mm
+}
 \midi {}
-
 }

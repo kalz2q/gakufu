@@ -3,18 +3,16 @@
 % 若鷲の歌(わかいちしおのよかれんの)
 % \index{わかわし@若鷲の歌(わかいちしおのよかれんの)}
 
-\score {
-
-\layout {
-line-width = #170
-indent = 0\mm
+\header {
+piece = "若鷲の歌(わかいちしおのよかれんの)"
 }
 
+melody =
 \relative c' {
 \key g \major
 \time 4/4
 \set Score.tempoHideNote = ##t
-\tempo 4=120
+\tempo 4=110
 \numericTimeSignature
 
 b2 e4 e |
@@ -39,7 +37,23 @@ e2. r4 |
 
 \bar "|."
 }
+\score {
+<<
+\chords {
+\set noChordSymbol = ""
+\set chordChanges=##t
+%
+e4:m e:m e:m e:m b:7 b:7 b:7 b:7 e:m e:m e:m e:m b:7 b:7 b:7 b:7 
+e:m e:m e:m e:m b:7 b:7 b:7 b:7 e:m e:m b:7 b:7 e:m e:m e:m e:m
+b:7 b:7 b:7 b:7 e:m e:m e:m e:m e:m e:m a:m a:m b:7 b:7 b:7 b:7 
+e:m e:m e:m e:m b:7 b:7 b:7 b:7 b:7 b:7 b:7 b:7 e:m e:m e:m e:m 
 
+}
+\new Staff {\melody}
+>>
+\layout {
+line-width = #190
+indent = 0\mm
+}
 \midi {}
-
 }
