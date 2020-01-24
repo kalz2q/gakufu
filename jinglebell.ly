@@ -5,18 +5,16 @@
 % \index{くりすます@ジングル・ベル(クリスマス。のをこえておかをこえ)}
 
 
-\score {
-
-\layout {
-line-width = #170
-indent = 0\mm
+\header {
+piece = "ジングル・ベル(のをこえておかをこえ)"
 }
 
+melody =
 \relative c' {
 \key es \major
 \time 4/4
 \set Score.tempoHideNote = ##t
-\tempo 4=120
+\tempo 4=90
 \numericTimeSignature
 
 bes8 g' f es bes4. bes16 bes |
@@ -41,7 +39,24 @@ bes8 bes as f es4. r8 |
 
 \bar "|."
 }
+\score {
+<<
+\chords {
+\set noChordSymbol = ""
+\set chordChanges=##t
+%
+es4 es es es es es as as as as bes:7 bes:7
+bes:7 bes:7 es es es es es es es es as as as as bes:7 bes:7
+bes:7 bes:7 es es es es es es es es es es
+as as es es bes:7 bes:7 bes:7 bes:7 es es es es
+es es es es as as es es bes:7 bes:7 es es
 
+}
+\new Staff {\melody}
+>>
+\layout {
+line-width = #190
+indent = 0\mm
+}
 \midi {}
-
 }

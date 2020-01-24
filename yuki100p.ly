@@ -2,18 +2,16 @@
 
 % 勇気100%(がっかりしてめそめそしてどうしたんだい)
 
-\score {
-
-\layout {
-line-width = #170
-indent = 0\mm
+\header {
+piece = "勇気100%(がっかりしてめそめそしてどうしたんだい)"
 }
 
+melody =
 \relative c' {
 \key g \major
 \time 4/4
 \set Score.tempoHideNote = ##t
-\tempo 4=120
+\tempo 4=100
 \numericTimeSignature
 
 b4 a b8 d4 e8~ |
@@ -73,7 +71,30 @@ g2. r4 |
 
 \bar "|."
 }
+\score {
+<<
+\chords {
+\set noChordSymbol = ""
+\set chordChanges=##t
+%
+g4 g g g e:m e:m e:m e:m c c c c g g g g
+a:m a:m d:7 d:7 g g e:m e:m c c c c d:7 d:7 d:7 d:7
+g4 g g g e:m e:m e:m e:m c c c c g g g g
+a:m a:m d:7 d:7 
+g g e:m e:m a:m a:m a:m a:m d:7 d:7 d:7 d:7 e:m e:m e:m e:m
+b:m b:m b:m b:m b:7 b:7 b:7 b:7 e:m e:m e:m e:m c c c c
+a:7 a:7 a:7 a:7 d:7 d:7 d:7 d:7 d:7 d:7 d:7 d:7 g g g g
+d:7 d:7 d:7 d:7 e:m e:m e:m e:m b b b b c c c c
+g g g g a:7 a:7 a:7 a:7 d:7 d:7 d:7 d:7 g g g g
+d:7 d:7 d:7 d:7 e:m e:m e:m e:m b b b b c c c c 
+g g g g c c c c d:7 d:7 d:7 d:7 g g g g g g g g
 
+}
+\new Staff {\melody}
+>>
+\layout {
+line-width = #190
+indent = 0\mm
+}
 \midi {}
-
 }
