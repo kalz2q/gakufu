@@ -3,65 +3,78 @@
 % 浜辺の歌(あしたはまべをさまよえば)
 % \index{はまべ@浜辺の歌(あしたはまべをさまよえば)}
 
-\score {
-
-\layout {
-line-width = #170
-indent = 0\mm
+\header {
+piece = "浜辺の歌(あしたはまべをさまよえば)"
 }
 
+melody =
 \relative c' {
-\key f \major
+\key es \major
 \time 3/4
 \set Score.tempoHideNote = ##t
-\tempo 4=120
+\tempo 4=100
 \numericTimeSignature
 \partial 4
 
-c4 | % 0
-c2 f8 g | % 1
-a2 g8 f | % 2
-g2 d4 | % 3
-f2 e8 d | % 4
+bes4 | % 0
+bes2 es8 f | % 1
+g2 f8 es | % 2
+f2 c4 | % 3
+es2 d8 c | % 4
 % \break
-c2 f4 | % 5
-a2 g8 f | % 6
-g2.~ | % 7
-g4 r c, | % 8
+bes2 es4 | % 5
+g2 f8 es | % 6
+f2.~ | % 7
+f4 r bes, | % 8
 \break
-c2 f8 g | % 9
-a2 g8 f | % 10
-g2 d4 | % 11
-f2 e8 d | % 12
+bes2 es8 f | % 9
+g2 f8 es | % 10
+f2 c4 | % 11
+es2 d8 c | % 12
 % \break
-c2 a'4 | % 13
-c,2 g'4 | % 14
-f2. ~ | % 15
-f4 r c' | % 16
+bes2 g'4 | % 13
+bes,2 f'4 | % 14
+es2. ~ | % 15
+es4 r bes' | % 16
 \break
-c2 g4 | % 17
-c2 gis4 | % 18
-c2. | % 19
-a2 d4 | % 20
+bes2 f4 | % 17
+bes2 fis4 | % 18
+bes2. | % 19
+g2 c4 | % 20
 % \break
-d2 bes4 | % 21
-f2 g4 | % 22
-c2.~ | % 23
-c4 r c, | % 24
+c2 as4 | % 21
+es2 f4 | % 22
+bes2.~ | % 23
+bes4 r bes, | % 24
 \break
-c2 f8 g | % 25
-a2 g8 f | % 26
-g2 d4 | % 27
-f2 e8 d | % 28
+bes2 es8 f | % 25
+g2 f8 es | % 26
+f2 c4 | % 27
+es2 d8 c | % 28
 % \break
-c2 a'4 | % 29
-c,2 g'4 | % 30
-f2.~ | % 31
-f2 r4 | % 32
+bes2 g'4 | % 29
+bes,2 f'4 | % 30
+es2.~ | % 31
+es2 r4 | % 32
 
 \bar "|."
 }
+\score {
+<<
+\chords {
+\set noChordSymbol = ""
+\set chordChanges=##t
+%
+r4 es2. es as as es es bes:7 bes:7
+es es as as es bes:7 es es
 
+
+}
+\new Staff {\melody}
+>>
+\layout {
+line-width = #190
+indent = 0\mm
+}
 \midi {}
-
 }

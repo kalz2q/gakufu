@@ -2,42 +2,59 @@
 
 % もみじ(あきのゆうひにてるやま)
 
-\score {
-
-\layout {
-line-width = #170
-indent = 0\mm
+\header {
+piece = "もみじ(あきのゆうひにてるやま)"
 }
 
+melody =
 \relative c'' {
-\key f \major
+\key es \major
 \time 4/4
 \set Score.tempoHideNote = ##t
-\tempo 4=120
+\tempo 4=90
 \numericTimeSignature
 
-a4 g8 f g4 a |
-f2 c4 r |
-f e8 f g4 c |
-a g8 f g4 r |
+g4 f8 es f4 g |
+es2 bes4 r |
+es d8 es f4 bes |
+g f8 es f4 r |
 \break
-a4 g8 f g4 a |
-f2 c4 r |
-f e8 f g4 c |
-a g f r|
+g4 f8 es f4 g |
+es2 bes4 r |
+es d8 es f4 bes |
+g f es r|
 \break
-c' a8 bes c4 d |
-c2 a4 r |
-c d8 c a4 g8 f |
-g4 a g r |
+bes' g8 as bes4 c |
+bes2 g4 r |
+bes c8 bes g4 f8 es |
+f4 g f r |
 \break
-c d8 c a4 g |
-f2 c4 r |
-f e8 f a4 g |
-f2. r4 |
+bes c8 bes g4 f |
+es2 bes4 r |
+es d8 es g4 f |
+es2. r4 |
+
+
 \bar "|."
 }
+\score {
+<<
+\chords {
+\set noChordSymbol = ""
+\set chordChanges=##t
+%
+es4 es es es es es es es es es bes:7 bes:7 es es es es
+es es es es es es es es es es bes:7 bes:7 es bes:7 es es
+es es es es es es es es es es es es bes:7 bes:7 bes:7 bes:7
+es es es es es es es es es es es bes:7 es es es es
 
+
+}
+\new Staff {\melody}
+>>
+\layout {
+line-width = #190
+indent = 0\mm
+}
 \midi {}
-
 }

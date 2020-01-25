@@ -3,48 +3,66 @@
 % 青い目の人形(あおいめをしたおにんぎょは)
 % \index{あおいめ@青い目の人形(あおいめをしたおにんぎょは)}
 
-\score {
-
-\layout {
-line-width = #170
-indent = 0\mm
+\header {
+piece = "青い目の人形(あおいめをしたおにんぎょは)"
 }
 
+melody =
 \relative c'' {
-\key f \major
+\key d \major
 \time 4/4
 \set Score.tempoHideNote = ##t
-\tempo 4=120
+\tempo 4=80
 \numericTimeSignature
 
-c8. d16 c8 a c a16g f8 f |
-g a  c, c c4 r |
-d8 c d c d f g a |
-c4. d8 a f g4 |
+a8. b16 a8 fis a fis16e d8 d |
+e fis  a, a a4 r |
+b8 a b a b d e fis |
+a4. b8 fis d e4 |
 \break
 \bar "||"
-\key f \minor
-c8 c c bes c c c bes |
-c des des bes c4 r |
-as8 as as g as as as g |
-as c f, f g4 r |
+\key d \minor
+a8 a a g a a a g |
+a bes bes g a4 r |
+f8 f f e f f f e |
+f a d, d e4 r |
 \break
-c8 c c bes c c c bes |
-c des des bes c4 r |
-as8 as as g as as as g |
-as c f, f g4 r |
+a8 a a g a a a g |
+a bes bes g a4 r |
+f8 f f e f f f e |
+f a d, d e4 r |
 \break
-\key f \major
-c8. d16 c8 a c a16g f8 f |
-g a  c, c c4 r |
-d8 c d c d f g a |
-c4. d8 a f g4 |
-d8 c d c d f g a |
-c4. d8 a g f4 |
+\key d \major
+a8. b16 a8 fis a fis16e d8 d |
+e fis  a, a a4 r |
+b8 a b a b d e fis |
+a4. b8 fis d e4 |
+b8 a b a b d e fis |
+a4. b8 fis e d4 |
+
+
 
 \bar "|."
 }
+\score {
+<<
+\chords {
+\set noChordSymbol = ""
+\set chordChanges=##t
+%
+d4 d d d a:7 a:7 a:7 a:7  g g g g
+d d d a:7 d:m d:m d:m d:m d:m d:m d:m d:m 
+d:m d:m d:m d:m d:m d:m a:7 a:7 d:m d:m d:m d:m 
+g:m g:m d:m d:m d:m d:m d:m d:m d:m d:m a:7 a:7
+d d d d a:7 a:7 a:7 a:7 g g g g 
+d d d a:7 g g g g d d a:7 d
 
+}
+\new Staff {\melody}
+>>
+\layout {
+line-width = #190
+indent = 0\mm
+}
 \midi {}
-
 }
