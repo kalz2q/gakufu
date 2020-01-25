@@ -3,13 +3,11 @@
 % ハイ・ホー(くちぶえをげんきにふきならし)
 % \index{はいほ@ハイ・ホー(くちぶえをげんきにふきならし)}
 
-\score {
-
-\layout {
-line-width = #170
-indent = 0\mm
+\header {
+piece = "ハイ・ホー(くちぶえをげんきにふきならし)"
 }
 
+melody =
 \relative c'' {
 \key f \major
 \time 4/4

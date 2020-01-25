@@ -55,7 +55,7 @@ es2 d8 c | % 28
 bes2 g'4 | % 29
 bes,2 f'4 | % 30
 es2.~ | % 31
-es2 r4 | % 32
+es4 r 
 
 \bar "|."
 }
@@ -67,7 +67,8 @@ es2 r4 | % 32
 %
 r4 es2. es as as es es bes:7 bes:7
 es es as as es bes:7 es es
-
+bes bes es es as as bes:7 bes:7
+es es as as es bes:7 es es2
 
 }
 \new Staff {\melody}
