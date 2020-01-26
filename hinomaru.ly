@@ -3,13 +3,11 @@
 % 日の丸の旗（しろじにあかくひのまるそめて）
 % \index{ひのまる@日の丸の旗（しろじにあかくひのまるそめて)}
 
-\score {
-
-\layout {
-line-width = #170
-indent = 0\mm
+\header {
+piece = "日の丸の旗（しろじにあかくひのまるそめて）"
 }
 
+melody =
 \relative c' {
 \key c \major
 \time 2/4
@@ -25,7 +23,6 @@ e e
 g g
 a a
 g r
-\break
 a a
 g g 
 e c d r
@@ -36,7 +33,23 @@ d e c r
 
 \bar "|."
 }
+\score {
+<<
+\chords {
+\set noChordSymbol = ""
+\set chordChanges=##t
+%
+c4 c g:7 g:7 c c g:7 g:7
+c c c c f f c c
+f f c c c c g:7 g:7
+c c c c g:7 g:7 c c
 
+}
+\new Staff {\melody}
+>>
+\layout {
+line-width = #190
+indent = 0\mm
+}
 \midi {}
-
 }
