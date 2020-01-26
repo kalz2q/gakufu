@@ -3,18 +3,16 @@
 % 冬の夜(ともしびちかくきぬぬうははは)
 % \index{ふゆのよる@冬の夜(ともしびちかくきぬぬうははは)}
 
-\score {
-
-\layout {
-line-width = #170
-indent = 0\mm
+\header {
+piece = "冬の夜(ともしびちかくきぬぬうははは)"
 }
 
+melody =
 \relative c' {
 \key f \major
 \time 4/4
 \set Score.tempoHideNote = ##t
-\tempo 4=120
+\tempo 4=90
 \numericTimeSignature
 
 f4. a8 a4 g8 f | 
@@ -44,7 +42,25 @@ e f g a f4 r |
 
 \bar "|."
 }
+\score {
+<<
+\chords {
+\set noChordSymbol = ""
+\set chordChanges=##t
+%
+f4 f f f f f f f f f f f c:7 c:7 c:7 c:7 
+f f f f f f f f c:7 c:7 c:7 c:7 c:7 c:7 f f
+f f f f f f f f f f f f c:7 c:7 c:7 c:7 
+f f f f f f f f c:7 c:7 c:7 c:7 c:7 c:7 f f
+c:7 c:7 c:7 c:7 c:7 c:7 c:7 c:7 f f f f c:7 c:7 f f
 
+
+}
+\new Staff {\melody}
+>>
+\layout {
+line-width = #190
+indent = 0\mm
+}
 \midi {}
-
 }
