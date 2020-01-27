@@ -23,6 +23,7 @@ melody =
 \set noChordSymbol = ""
 \set chordChanges=##t
 %
+
 }
 \new Staff {\melody}
 >>
