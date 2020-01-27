@@ -2,35 +2,49 @@
 
 % 一週間(にちようびにいちばにでかけ)
 
-\score {
-
-\layout {
-line-width = #170
-indent = 0\mm
+\header {
+piece = "一週間(にちようびにいちばにでかけ)"
 }
 
+melody =
 \relative c' {
-\key c \minor
+\key d \minor
 \time 4/4
 \set Score.tempoHideNote = ##t
-\tempo 4=120
+\tempo 4=90
 \numericTimeSignature
 
 \partial 4
-c8 es |
-g4 g8 f g4 g8 f |
-g8 f es4 r g8 f |
-g4 f8 es f4 es8 d |
-es8 d c4 r c8 es | 
+d8 f |
+a4 a8 g a4 a8 g |
+a8 g f4 r a8 g |
+a4 g8 f g4 f8 e |
+f8 e d4 r d8 f | 
 \break
-g8 g g f g g g f |
-g f es4 r g8 f |
-g4 f8 es f4 g |
-c2. 
+a8 a a g a a a g |
+a g f4 r a8 g |
+a4 g8 f g4 a |
+d2.
 
 \bar "|."
 }
+\score {
+<<
+\chords {
+\set noChordSymbol = ""
+\set chordChanges=##t
+%
+r4 d:m d:m d:m d:m d:m d:m
+d:m d:m d:m d:m a:7 a:7 d:m d:m
+d:m d:m d:m d:m d:m d:m d:m d:m
+d:m d:m d:m d:m a:7 a:7 d:m d:m d:m
 
+}
+\new Staff {\melody}
+>>
+\layout {
+line-width = #190
+indent = 0\mm
+}
 \midi {}
-
 }

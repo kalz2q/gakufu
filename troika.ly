@@ -3,18 +3,16 @@
 % トロイカ(ゆきのしらかばなみき)
 % \index{とろいか@トロイカ(ゆきのしらかばなみき)}
 
-\score {
-
-\layout {
-line-width = #170
-indent = 0\mm
+\header {
+piece = "トロイカ(ゆきのしらかばなみき)"
 }
 
+melody =
 \relative c' {
 \key a \minor
 \time 4/4
 \set Score.tempoHideNote = ##t
-\tempo 4=120
+\tempo 4=100
 \numericTimeSignature
 \partial 8
 e8 | % 1
@@ -33,7 +31,22 @@ a2. r4| % 13
 
 \bar "|."
 }
+\score {
+<<
+\chords {
+\set noChordSymbol = ""
+\set chordChanges=##t
+%
+r8 a4:m a:m a:m a:m e:7 e:7 e:7 e:7 a:m a:m f f e:7 e:7 e:7 e:7 
+a:m a:m a:m a:m d:m d:m d:m d:m e:7 e:7 e:7 e:7 a:m a:m a:m a:m 
+a:m a:m a:m a:m d:m d:m d:m d:m e:7 e:7 e:7 e:7 a:m a:m a:m a:m 
 
+}
+\new Staff {\melody}
+>>
+\layout {
+line-width = #190
+indent = 0\mm
+}
 \midi {}
-
 }

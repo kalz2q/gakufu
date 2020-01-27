@@ -2,68 +2,80 @@
 
 % 川の流れのように(しらずしらずあるいてきた)
 
-\score {
-
-\layout {
-line-width = #170
-indent = 0\mm
+\header {
+piece = "川の流れのように(しらずしらずあるいてきた)"
 }
 
+melody =
 \relative c' {
-\key g \major
+\key a \major
 \time 4/4
 \set Score.tempoHideNote = ##t
-\tempo 4=120
+\tempo 4=70
 \numericTimeSignature
 
-r2 r4 g8 a |
-b4 a8 b d4 g,8 a |
-b4 a8 b g4 g8 a |
-b4 d8 g fis4 d8 b |
-b a ~ a4 r g8 a |
+r2 r4 a8 b |
+cis4 b8 cis e4 a,8 b |
+cis4 b8 cis a4 a8 b |
+cis4 e8 a gis4 e8 cis |
+cis b ~ b4 r a8 b |
 \break
-b4 a8 b d4 g,8 a |
-b4 a8 b e4 r8 e |
-d 4. e 8 d b a a |
-g2 r 4 r8 g |
+cis4 b8 cis e4 a,8 b |
+cis4 b8 cis fis4 r8 fis |
+e 4. fis 8 e cis b b |
+a2 r 4 r8 a |
 \break
-g'4. e8 e4 b8 e | % 10
-d2 r4 b8 d |
-e4 e8 g e d b d |
-d2 r |
+a'4. fis8 fis4 cis8 fis | % 10
+e2 r4 cis8 e |
+fis4 fis8 a fis e cis e |
+e2 r |
 \break
-e4 g8 a g4. g8 |
-fis2 e8 fis g gis |
-a2 ~ a8 a b g |
+fis4 a8 b a4. a8 |
+gis2 fis8 gis a ais |
+b2 ~ b8 b cis a |
+b1 ~ |
+b2 r4 e,4 |
+\break
+cis'1 |
+r8 a b cis e cis b a |
+gis2 cis2 ~ |
+cis4 r cis e |
+\break
+d cis8 fis,~fis2 | % 23
+r2 e8 fis gis cis |
+b4 a 8 cis b4 a8 cis |
+b2 r 4 e, |
+\break
+cis'1 | % 27
+r8 a b cis e cis b a |
+gis2 cis2 ~ |
+cis4 r cis e |
+d cis8 fis, ~ fis2 |
+\break
+e4 e8 cis' ~ cis cis b cis | % 32
+b a~ a2. |
+r4 d cis a8 b |
 a1 ~ |
-a2 r4 d,4 |
-\break
-b'1 |
-r8 g a b d b a g |
-fis2 b2 ~ |
-b4 r b d |
-\break
-c b8 e,~e2 | % 23
-r2 d8 e fis b |
-a4 g 8 b a4 g8 b |
-a2 r 4 d, |
-\break
-b'1 | % 27
-r8 g a b d b a g |
-fis2 b2 ~ |
-b4 r b d |
-c b8 e, ~ e2 |
-\break
-d4 d8 b' ~ b b a b | % 32
-a g~ g2. |
-r4 c b g8 a |
-g1 ~ |
-g2. r4 |
+a2. r4 |
 
 
 \bar "|."
 }
-
+\score {
+<<
+\chords {
+\set noChordSymbol = ""
+\set chordChanges=##t
+%
+r2 r4 a a a a a a a a a a a a a a a a a
+a a a a a a d d e:7 e:7 e:7 e:7 a a a a
+d d d d e:7 e:7 e:7 a fis:m fis:m fis:m fis:m e:7 e:7 e:7 e:7 
+}
+\new Staff {\melody}
+>>
+\layout {
+line-width = #190
+indent = 0\mm
+}
 \midi {}
-
 }
