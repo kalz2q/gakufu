@@ -2,18 +2,17 @@
 
 % おもちゃのチャチャチャ
 
-\score {
 
-\layout {
-line-width = #170
-indent = 0\mm
+\header {
+piece = "おもちゃのチャチャチャ"
 }
 
+melody =
 \relative c' {
 \key c \major
 \time 4/4
 \set Score.tempoHideNote = ##t
-\tempo 4=120
+\tempo 4=90
 \numericTimeSignature
 
 c8 c c e a a a4 |
@@ -38,7 +37,25 @@ g4 b c r |
 
 \bar "|."
 }
+\score {
+<<
+\chords {
+\set noChordSymbol = ""
+\set chordChanges=##t
+%
+c4 c c c g:7 g:7 g:7 g:7 g:7 g:7 g:7 g:7
+g:7 g:7 c c c c c c c c c c 
+g:7 g:7 g:7 g:7 g:7 g:7 g:7 g:7 f f f f
+e:m e:m a:m a:m g:7 g:7 g:7 g:7 g:7 g:7 c c
+c c c c g:7 g:7 g:7 g:7 g:7 g:7 g:7 g:7 g:7 g:7 c c
 
+
+}
+\new Staff {\melody}
+>>
+\layout {
+line-width = #190
+indent = 0\mm
+}
 \midi {}
-
 }

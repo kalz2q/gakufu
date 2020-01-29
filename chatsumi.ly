@@ -1,45 +1,59 @@
 \version "2.18.2"
 
-% 茶摘(ちゃつみ。なつもちかづくはちじゅうはちや)
+% 茶摘み(ちゃつみ。なつもちかづくはちじゅうはちや)
 
-\score {
-
-\layout {
-line-width = #170
-indent = 0\mm
+\header {
+piece = "茶摘み(ちゃつみ。なつもちかづくはちじゅうはちや)
+"
 }
 
+melody =
 \relative c' {
-\key c \major
+\key g \major
 \time 4/4
 \set Score.tempoHideNote = ##t
-\tempo 4=120
+\tempo 4=90
 \numericTimeSignature
 
-r c f g |
-a4. a8 a4 a |
-c4. c8 c4 a |
-g f g r |
+r d g a |
+b4. b8 b4 b |
+d4. d8 d4 b |
+a g a r |
 \break
-r a a c |
-a4. a8 a4 g |
-a4. a8 g4 f |
-d d c r |
+r b b d |
+b4. b8 b4 a |
+b4. b8 a4 g |
+e e d r |
 \break
-r c f g |
-a4. a8 a4 a |
-c4. c8 c4 a |
-g f g r |
+r d g a |
+b4. b8 b4 b |
+d4. d8 d4 b |
+a g a r |
 \break
-r c c a |
-g4. g8 f4 d |
-c f g4. a8 |
-f2. r4 |
+r d d b |
+a4. a8 g4 e |
+d g a4. b8 |
+g2. r4 |
 
 
 \bar "|."
 }
-
+\score {
+<<
+\chords {
+\set noChordSymbol = ""
+\set chordChanges=##t
+%
+g4 g g g g g g g g g g g d:7 d:7 d:7 d:7 
+g g g g g g g g g g g g c c d:7 d:7 
+g g g g g g g g g g g g d:7 d:7 d:7 d:7 
+g g g g c c c c g g d:7 d:7 g g g g
+}
+\new Staff {\melody}
+>>
+\layout {
+line-width = #190
+indent = 0\mm
+}
 \midi {}
-
 }

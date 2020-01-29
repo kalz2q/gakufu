@@ -2,18 +2,16 @@
 
 % 北国の春(しらかばあおぞらみなみかぜ)
 
-\score {
-
-\layout {
-line-width = #170
-indent = 0\mm
+\header {
+piece = "北国の春(しらかばあおぞらみなみかぜ)"
 }
 
+melody =
 \relative c'' {
 \key a \major
 \time 4/4
 \set Score.tempoHideNote = ##t
-\tempo 4=120
+\tempo 4=90
 \numericTimeSignature
 r 8 cis cis cis cis2 |
 b8 cis cis b a4 fis8 e |
@@ -40,9 +38,26 @@ fis8 a a b cis2 |
 b4. b8 b cis16 b a8 fis |
 a1 |
 
+
 \bar "|."
 }
-
+\score {
+<<
+\chords {
+\set noChordSymbol = ""
+\set chordChanges=##t
+%
+a4 a a a b:m b:m d d a a d d a a a a 
+d d d d a a a a a a b:m e:7 a a a a
+e:7 e:7 e:7 e:7 a a a a a a d d e:7 e:7 e:7 e:7
+a a a a d d a a a a a a b:m b:m e:7 e:7 
+a a a a d d a a b:m b:m b:m d a a a a
+}
+\new Staff {\melody}
+>>
+\layout {
+line-width = #190
+indent = 0\mm
+}
 \midi {}
-
 }
