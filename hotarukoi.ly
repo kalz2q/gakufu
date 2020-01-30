@@ -2,18 +2,16 @@
 
 % ほたるこい
 
-\score {
-
-\layout {
-line-width = #170
-indent = 0\mm
+\header {
+piece = "ほたるこい"
 }
 
+melody =
 \relative c'' {
-\key c \major
+\key a \minor
 \time 4/4
 \set Score.tempoHideNote = ##t
-\tempo 4=120
+\tempo 4=110
 \numericTimeSignature
 
 a r a r |
@@ -28,7 +26,20 @@ a g8 g a4 r |
 
 \bar "|."
 }
-
+\score {
+<<
+\chords {
+\set noChordSymbol = ""
+\set chordChanges=##t
+%
+a2:m a:m a:m a:m a:m a:m a:m a:m 
+a:m a:m a:m a:m a:m a:m a:m a:m 
+}
+\new Staff {\melody}
+>>
+\layout {
+line-width = #190
+indent = 0\mm
+}
 \midi {}
-
 }

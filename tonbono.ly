@@ -2,18 +2,16 @@
 
 % とんぼのめがね
 
-\score {
-
-\layout {
-line-width = #170
-indent = 0\mm
+\header {
+piece = "とんぼのめがね"
 }
 
+melody =
 \relative c' {
 \key c \major
 \time 4/4
-  \set Score.tempoHideNote = ##t
-\tempo 4=120
+\set Score.tempoHideNote = ##t
+\tempo 4=90
 \numericTimeSignature
 
 c4 e8 e d d c d |
@@ -26,7 +24,21 @@ c2. r4 |
 
 \bar "|."
 }
-
+\score {
+<<
+\chords {
+\set noChordSymbol = ""
+\set chordChanges=##t
+%
+c4 c g g c c g g 
+a:m a:m g g c c c c 
+a:m a:m a:m a:m c c c c
+}
+\new Staff {\melody}
+>>
+\layout {
+line-width = #190
+indent = 0\mm
+}
 \midi {}
-
 }

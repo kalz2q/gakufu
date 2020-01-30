@@ -2,66 +2,87 @@
 
 % だんご３兄弟(くしにささってだんごだんご)
 
-\score {
-
-\layout {
-line-width = #170
-indent = 0\mm
+\header {
+piece = "だんご３兄弟(くしにささってだんごだんご)"
 }
 
+melody =
 \relative c' {
-\key c \minor
+\key a \minor
 \time 4/4
 \set Score.tempoHideNote = ##t
-\tempo 4=120
+\tempo 4=100
 \numericTimeSignature
 
-r8 c c d es d d c |
-b4 d b d |
-r8 b8 b c f es es d |
-c4 es c es |
+r8 a a b c b b a |
+gis4 b gis b |
+r8 gis8 gis a d c c b |
+a4 c a c |
 \break
-r8 g g g g g f e | % 5
-f4 as f as |
-r8 g g as g f es d |
-c4 r r2 |
+r8 e e e e e d cis | % 5
+d4 f d f |
+r8 e e f e d c b |
+a4 r r2 |
 \break
 \bar "||"
-r8 g' g g g g f e | % 9
-f f f g as2 |
-r8 f16 f f8 f f f es d |
-es es es f g2 |
+r8 e' e e e e d cis | % 9
+d d d e f2 |
+r8 d16 d d8 d d d c b |
+c c c d e2 |
 \break
-r8 es16 es  es8 es es es d c | % 13
-f f f g as2 |
-r8 g16 g  g8 g g f4  es8 |
+r8 c16 c  c8 c c c b a | % 13
+d d d e f2 |
+r8 e16 e  e8 e e d4  c8 |
 \time 6/4 
-es4 d c b c r | % 16
+c4 b a gis a r | % 16
 \break
 \time 4/4
-r8 g' g f es4 es8 c | % 17
-as' as as r as as as r |
-r f f es d4 d8 bes |
-g' g g r g g g r |
+r8 e' e d c4 c8 a | % 17
+f' f f r f f f r |
+r d d c b4 b8 g |
+e' e e r e e e r |
 \break
-r8 es es es es es d c | % 21
-f4 as f as |
-r8 g g as g f es d |
-c4 b c r |
+r8 c c c c c b a | % 21
+d4 f d f |
+r8 e e f e d c b |
+a4 gis a r |
 \break
-g'4 g es es | % 25
-as as f f |
-r8 g g as g f es d |
-c g' g as g f es d |
-c g' g as g f es d |
-c4 r8 b' c r8 r4 |
+e'4 e c c | % 25
+f f d d |
+r8 e e f e d c b |
+a e' e f e d c b |
+a e' e f e d c b |
+a4 r8 gis' a r8 r4 |
 
 
 
 
 \bar "|."
 }
+\score {
+<<
+\chords {
+\set noChordSymbol = ""
+\set chordChanges=##t
+%
+a4:m a:m a:m a:m e:7 e:7 e:7 e:7 e:7 e:7 e:7 e:7 
+a:m a:m a:m a:m a:m a:m a:m a:m d:m d:m d:m d:m 
+e:7 e:7 e:7 e:7 a:m e:7 a:m a:m
+c c c c d:m7 d:m7 d:m7 d:m7 g:7 g:7 g:7 g:7 c c c c
+f f f f d:m d:m d:m d:m e:7 e:7 e:7 e:7
+a:m e:7 a:m e:7 a:m a:m
+a:m a:m a:m a:m d:m d:m d:m d:m g:7 g:7 g:7 g:7 c c c c f f f f d:m d:m d:m d:m
+e:7 e:7 e:7 e:7 a:m e:7 a:m a:m
+a:m a:m a:m a:m d:m d:m d:m d:m 
+a:m a:m a:m e:7 a:m a:m a:m e:7 a:m a:m a:m e:7 a:m e:7 a:m a:m
 
+
+}
+\new Staff {\melody}
+>>
+\layout {
+line-width = #190
+indent = 0\mm
+}
 \midi {}
-
 }

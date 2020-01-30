@@ -2,18 +2,16 @@
 
 % 有楽町で逢いましょう(あなたをまてばあめがふる)
 
-\score {
-
-\layout {
-line-width = #170
-indent = 0\mm
+\header {
+piece = "有楽町で逢いましょう(あなたをまてばあめがふる)"
 }
 
+melody =
 \relative c' {
 \key c \major
 \time 4/4
 \set Score.tempoHideNote = ##t
-\tempo 4=120
+\tempo 4=80
 \numericTimeSignature
 
 \tuplet 3/2 { a4 c8 } \tuplet 3/2 { e4 f8 } \tuplet 3/2 { e4 c8 }  a4 | % 1
@@ -42,7 +40,25 @@ e1 |
 
 \bar "|."
 }
+\score {
+<<
+\chords {
+\set noChordSymbol = ""
+\set chordChanges=##t
+%
+a4:m a:m a:m a:m d:m d:m e:7 e:7 a:m a:m a:m a:m 
+e:7 e:7 e:7 e:7 a:m a:m a:m a:m d:m d:m d:m d:m e:7 e:7 a:m a:m 
+a:m a:m a:m a:m e:7 e:7 a:m a:m d:m d:m d:m d:m
+e:7 e:7 e:7 e:7 e:7 e:7 e:7 e:7 a:m a:m a:m a:m 
+e:7 e:7 e:7 e:7 d:m d:m a:m a:m a:m e:7 a:m a:m 
+d:m d:m e:7 a:m a:m a:m d:m d:m  a:m a:m a:m a:m
 
+}
+\new Staff {\melody}
+>>
+\layout {
+line-width = #190
+indent = 0\mm
+}
 \midi {}
-
 }
