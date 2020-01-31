@@ -2,18 +2,16 @@
 
 % 南国土佐を後にして(なんごくとさをあとにして)
 
-\score {
-
-\layout {
-line-width = #170
-indent = 0\mm
+\header {
+piece = "南国土佐を後にして(なんごくとさをあとにして)"
 }
 
+melody =
 \relative c' {
 \key c \major
 \time 4/4
 \set Score.tempoHideNote = ##t
-\tempo 4=120
+\tempo 4=80
 \numericTimeSignature
 
 r8 e4 e8 e4 e8 f ~|
@@ -49,7 +47,29 @@ e4 e2. |
 
 \bar "|."
 }
+\score {
+<<
+\chords {
+\set noChordSymbol = ""
+\set chordChanges=##t
+%
+a4:m a:m a:m a:m a:m a:m a:m a:m d:m d:m d:m d:m e:7 e:7 e:7 e:7
+a:m a:m e:7 a:m d:m d:m d:m a:m a:m a:m e:7 e:7 a:m a:m a:m a:m 
+e:7 e:7 e:7 e:7 a:m a:m a:m a:m e:7 e:7 e:7 e:7 a:m a:m a:m a:m 
+e:7 e:7 d:m d:m d:m d:m d:m a:m a:m a:m e:7 e:7 a:m a:m a:m a:m
+a:m a:m e:7 e:7 e:7 a:m e:7 a:m a:m a:m e:7 e:7 e:7 e:7 d:m d:m
+a:m a:m a:m a:m a:m d:m d:m d:m a:m d:m a:m a:m e:7 e:7 e:7 e:7 e:7 e:7 e:7 e:7 e:7 a:m a:m a:m
 
+
+
+
+
+}
+\new Staff {\melody}
+>>
+\layout {
+line-width = #190
+indent = 0\mm
+}
 \midi {}
-
 }
