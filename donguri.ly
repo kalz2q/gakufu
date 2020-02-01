@@ -2,18 +2,16 @@
 
 % どんぐりころころ(どんぐりころころどんぶりこ)
 
-\score {
-
-\layout {
-line-width = #170
-indent = 0\mm
+\header {
+piece = "どんぐりころころ(どんぐりころころどんぶりこ)"
 }
 
+melody =
 \relative c'' {
 \key c \major
 \time 2/4
 \set Score.tempoHideNote = ##t
-\tempo 4=120
+\tempo 4=50
 \numericTimeSignature
 
 g8 e16 e f e d c |
@@ -26,9 +24,24 @@ g'8 e16 e d8 r
 g e  a g16 g|
 a a b b c4|
 
+
 \bar "|."
 }
+\score {
+<<
+\chords {
+\set noChordSymbol = ""
+\set chordChanges=##t
+%
+c4 f c g:7 c f c g:7
+c f c g:7 c f c8 g:7 c4
 
+}
+\new Staff {\melody}
+>>
+\layout {
+line-width = #190
+indent = 0\mm
+}
 \midi {}
-
 }

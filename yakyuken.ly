@@ -2,40 +2,38 @@
 
 % 野球拳(やきゅうけん。やきゅうするならこういうぐあいにしやしゃんせ)
 
-\score {
-
-\layout {
-line-width = #170
-indent = 0\mm
+\header {
+piece = "野球拳(やきゅうけん。やきゅうするならこういうぐあいにしやしゃんせ)"
 }
 
+melody =
 \relative c'' {
 \key c \major
 \time 2/4
 \set Score.tempoHideNote = ##t
-\tempo 4=120
+\tempo 4=90
 \numericTimeSignature
 
 g4 e8. g16 | % 1
 a4. b8 |
 a8. g16 e8. e 16 |
 d2 |
-\break
+
 e8. e16 g8. g16 |
 e8. e16 d8. c16 |
 d8. e16 d8. c16 |
 a2 |
-\break
+
 g'8. g16 e8. g16 | % 9
 a4. b8 |
 a8. g16 e8. e 16 |
 d2 |
-\break
+
 g8. g16 e8. g16 | % 13
 a4. b8 |
 a8. g16 e8. e 16 |
 d2 |
-\break
+
 e8. e16 g8. g16 |
 e8. e16 d8. c16 |
 d4 a4 |
@@ -43,7 +41,24 @@ a2 |
 
 \bar "|."
 }
+\score {
+<<
+\chords {
+\set noChordSymbol = ""
+\set chordChanges=##t
+%
+c4 c a:m a:m a:m a:m g:7 g:7
+c c c c d:m d:m a:m a:m
+c c a:m a:m a:m a:m g:7 g:7
+c c a:m a:m a:m a:m g:7 g:7
+c c c c d:m d:m a:m a:m
 
+}
+\new Staff {\melody}
+>>
+\layout {
+line-width = #190
+indent = 0\mm
+}
 \midi {}
-
 }

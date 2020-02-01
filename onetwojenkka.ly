@@ -2,18 +2,16 @@
 
 % ワンツー・ジェンカ(おおきくくちあけて)
 
-\score {
-
-\layout {
-line-width = #170
-indent = 0\mm
+\header {
+piece = "ワンツー・ジェンカ(おおきくくちあけて)"
 }
 
+melody =
 \relative c' {
 \key c \major
 \time 4/4
 \set Score.tempoHideNote = ##t
-\tempo 4=120
+\tempo 4=100
 \numericTimeSignature
 
 e4 r e r |
@@ -39,7 +37,25 @@ ais4 ais b2 |
 
 \bar "|."
 }
+\score {
+<<
+\chords {
+\set noChordSymbol = ""
+\set chordChanges=##t
+%
+a2:m a:m a:m a:m d:m d:m d:m d:m
+a:m a:m a:m a:m a:m e:7 a:m a:m 
+e:7 e:7 a:m a:m c c c c
+e:7 e:7 a:m a:m e:7 a:m a:m e:7
 
+
+
+}
+\new Staff {\melody}
+>>
+\layout {
+line-width = #190
+indent = 0\mm
+}
 \midi {}
-
 }

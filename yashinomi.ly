@@ -2,18 +2,16 @@
 
 % 椰子の実(やしのみ。なもしらぬとおきしまより)
 
-\score {
-
-\layout {
-line-width = #170
-indent = 0\mm
+\header {
+piece = "椰子の実(やしのみ。なもしらぬとおきしまより)"
 }
 
+melody =
 \relative c' {
 \key c \major
 \time 4/4
 \set Score.tempoHideNote = ##t
-\tempo 4=120
+\tempo 4=70
 \numericTimeSignature
 
 r8 d g b a4 d, |
@@ -39,7 +37,26 @@ g2. r4
 
 \bar "|."
 }
+\score {
+<<
+\chords {
+\set noChordSymbol = ""
+\set chordChanges=##t
+%
+g4: g d:7 d:7 d:7 d:7 g d:7 g g c g g g d:7 g
+g g g g g g d:7 g c c g d:7 d:7 d:7 g g
+c c g g g g d:7 d:7
+g g g g c c d:7 d:7 g g g g
 
+
+
+
+}
+\new Staff {\melody}
+>>
+\layout {
+line-width = #190
+indent = 0\mm
+}
 \midi {}
-
 }
