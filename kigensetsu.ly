@@ -1,19 +1,40 @@
 \version "2.18.2"
 
-% 
+% 紀元節(くもにそびゆるたかちほの)
 
 \header {
-piece = ""
+piece = "紀元節(くもにそびゆるたかちほの)"
 }
 
 melody =
-\relative c' {
+\relative c'' {
 \key c \major
-\time 2/4
+\time 4/4
 \set Score.tempoHideNote = ##t
-\tempo 4=70
+\tempo 4=90
 \numericTimeSignature
 %
+g2 g4 a |
+e e d e |
+g g g a |
+e2. r4 |
+\break
+g2 g4 a |
+e e d c |
+d d d e |
+c2. r4 |
+\break
+a'2 a4 c |
+d d d c |
+a a a g |
+a2. r4 |
+\break
+c2 c4 d |
+a a g e |
+d d e d |
+c2. r4 |
+
+
 
 \bar "|."
 }
@@ -23,7 +44,10 @@ melody =
 \set noChordSymbol = ""
 \set chordChanges=##t
 %
-
+c2 c c c c c c c
+c c c c g:7 g:7 c c
+f f g:7 g:7 f f f f
+c c f c g:7 g:7 c c
 }
 \new Staff {\melody}
 >>
