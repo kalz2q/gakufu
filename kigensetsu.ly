@@ -18,17 +18,17 @@ g2 g4 a |
 e e d e |
 g g g a |
 e2. r4 |
-\break
+
 g2 g4 a |
 e e d c |
 d d d e |
 c2. r4 |
-\break
+
 a'2 a4 c |
 d d d c |
 a a a g |
 a2. r4 |
-\break
+
 c2 c4 d |
 a a g e |
 d d e d |
