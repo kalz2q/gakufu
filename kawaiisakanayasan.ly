@@ -18,22 +18,22 @@ g8. g16 e8. g16 |
 a8. a16 g8. e16 |
 g8. a16 a8. a16 |
 a4 r |
-\break
+
 c8. c16 a8. g16 |
 a8. a16 g8. e16 |
 g8. a16 a8. a16 |
 a4 r |
-\break
+
 e8. e16 d8. c16 |
 d8. e16 g8. a16 |
 g8. g16 e8. d16 |
 e4 r |
-\break
+
 c'8. c16 a8. g16 |
 a8. a16 g8. e16 |
 g8. a16 g8. e16 |
 d8 r a'8. a16 |
-\break
+
 g4. a8 |
 c8. a16 g8. e16 |
 g8. c16 a8. g16 |
@@ -50,6 +50,11 @@ a4 r |
 \set noChordSymbol = ""
 \set chordChanges=##t
 %
+c4 c a:m a:m a:m a:m a:m a:m
+a:m a:m a:m a:m a:m a:m a:m a:m
+c c c c c c a:m a:m
+a:m a:m a:m a:m c c d:m d:m
+c c a:m c c a:m a:m a:m
 
 }
 \new Staff {\melody}
