@@ -11,28 +11,28 @@ melody =
 \key e \minor
 \time 2/4
 \set Score.tempoHideNote = ##t
-\tempo 4=70
+\tempo 4=80
 \numericTimeSignature
 %
-e8. e16 b8. b16 |
-e8. e16 fis8. fis16 |
-g8. g16 fis8. e16 |
-fis4. r8 |
+\tuplet3/2{e4 e8} \tuplet3/2{b4 b8} |
+\tuplet3/2{e4 e8} \tuplet3/2{fis4 fis8} |
+\tuplet3/2{g4 g8} \tuplet3/2{fis4 e8} |
+fis4~\tuplet3/2{fis4 r8} |
 
-e8. e16 c8. c16 |
-b8. b16 e4 |
-fis8. fis16 g8. fis16 |
-e4. r8 |
+\tuplet3/2{e4 e8} \tuplet3/2{c4 c8} |
+\tuplet3/2{b4 b8} e4 |
+\tuplet3/2{fis4 fis8} \tuplet3/2{g4 fis8} |
+e4~\tuplet3/2{e4 r8} |
 
-b'4 g8. g16 |
-fis8. e16 fis8. g16 |
-b8. b16 c8. c16 |
-b4. r8 |
+b'4 \tuplet3/2{g4 g8} |
+\tuplet3/2{fis4 e8} \tuplet3/2{fis4 g8} |
+\tuplet3/2{b4 b8} \tuplet3/2{c4 c8} |
+b4~\tuplet3/2{b4 r8} |
 
-g8. g16 b8. b16 |
-g8. fis16 e8. fis16 |
-b,8. b16 g'8. fis16 |
-e4. r8 |
+\tuplet3/2{g4 g8} \tuplet3/2{b4 b8} |
+\tuplet3/2{g4 fis8} \tuplet3/2{e4 fis8} |
+\tuplet3/2{b,4 b8} \tuplet3/2{g'4 fis8} |
+e4~\tuplet3/2{e4 r8} |
 
 
 \bar "|."
