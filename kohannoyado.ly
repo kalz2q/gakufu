@@ -14,22 +14,22 @@ melody =
 \tempo 4=80
 \numericTimeSignature
 %
-r8. a16 a8. c16 e8. e16 e8. e16 |
-f8. e16 d8. c16 e2 |
-r8. a,16 a8. c16 e8. e16 e8. e16 |
+\tuplet3/2{r4 a8} \tuplet3/2{a4 c8} \tuplet3/2{e4 e8} \tuplet3/2{e4 e8} |
+\tuplet3/2{f4 e8} \tuplet3/2{d4 c8} e2 |
+\tuplet3/2{r4 a,8} \tuplet3/2{a4 c8} \tuplet3/2{e4 e8} \tuplet3/2{e4 e8} |
 
-b8. a16 b8. d16 c4 b | % 4
+\tuplet3/2{b4 a8} \tuplet3/2{b4 d8} c4 b | % 4
 a1 |
-r8. a'16 a8. b16 c8. b16 a8. e16 |
-c8. a16 a'8. a16 a2 |
+\tuplet3/2{r4 a'8} \tuplet3/2{a4 b8} \tuplet3/2{c4 b8} \tuplet3/2{a4 e8} |
+\tuplet3/2{c4 a8} \tuplet3/2{a'4 a8} a2 |
 
-r8. a16 a8. gis16 a8. f16~ f8. d16 | % 8
+\tuplet3/2{r4 a8} \tuplet3/2{a4 gis8} \tuplet3/2{a4 f8~} \tuplet3/2{f4 d8} | % 8
 e1 |
-r8. e16 e8. dis16 c8. b16 a8. c16 |
+\tuplet3/2{r4 e8} \tuplet3/2{e4 dis8} \tuplet3/2{c4 b8} \tuplet3/2{a4 c8} |
 b1 |
 
-r8. a16 a8. c16 e8. e16 e8. e16 | % 12
-r8. f16 e8. a16 b4 c8. b16 |
+\tuplet3/2{r4 a8} \tuplet3/2{a4 c8} \tuplet3/2{e4 e8} \tuplet3/2{e4 e8} | % 12
+\tuplet3/2{r4 f8} \tuplet3/2{e4 a8} b4 \tuplet3/2{c4 b8} |
 a1 |
 
 

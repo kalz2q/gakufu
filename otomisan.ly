@@ -41,8 +41,8 @@ bes 2 |
 bes2 |
 \tuplet3/2{r4 g8} \tuplet3/2{bes4 c8} |
 
-es4. f8 |
-r8 g4 bes8 |
+es4~ \tuplet3/2{es4 f8}| % 22
+\tuplet3/2{r4 g8~} \tuplet3/2{g4 bes8} | % 23
 \tuplet3/2{g4 f8} es4 |
 es2~ |
 es 4 r |

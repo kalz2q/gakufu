@@ -14,24 +14,24 @@ melody =
 \tempo 4=70
 \numericTimeSignature
 %
-\tuplet3/2{g4 e8} \tuplet3/2{g4 e8} |
-\tuplet3/2{e4 d8} d4 |
-\tuplet3/2{d4 d8} \tuplet3/2{c4 d8} |
+g8. e16 g8. e16 |
+e8. d16 d4 |
+d8. d16 c8. d16 |
 e4. r8 |
 
-\tuplet3/2{g4 g8} \tuplet3/2{e4 g8} |
-\tuplet3/2{e4 e8} c4 |
-\tuplet3/2{d4 d8} \tuplet3/2{e4 d8} |
+g8. g16 e8. g16 |
+e8. e16 c4 |
+d8. d16 e8. d16 |
 c4. r8 |
 
-\tuplet3/2{g'4 g8} \tuplet3/2{g4 g8} |
-\tuplet3/2{a4 a8} a4 |
-\tuplet3/2{c4 c8} \tuplet3/2{c4 a8} |
+g'8. g16 g8. g16 |
+a8. a16 a4 |
+c8. c16 c8. a16 |
 g4. r8 |
 
-\tuplet3/2{a4 a8} \tuplet3/2{c4 a8} |
-\tuplet3/2{g4 g8} \tuplet3/2{e4 e8} |
-\tuplet3/2{d4 d8} \tuplet3/2{e4 d8} |
+a8. a16 c8. a16 |
+g8. g16 e8. e16 |
+d8. d16 e8. d16 |
 c4. r8 |
 
 

@@ -14,47 +14,47 @@ melody =
 \tempo 4=80
 \numericTimeSignature
 %
-c8. c16 c8. c16 |
-f8. f16 f8. f16 |
-g8. g16 a8. a16  |
-g4. r8 |
+\tuplet3/2{c4 c8} \tuplet3/2{c4 c8} |
+\tuplet3/2{f4 f8} \tuplet3/2{f4 f8} |
+\tuplet3/2{g4 g8} \tuplet3/2{a4 a8}  |
+g4~\tuplet3/2{g4 r8} | % 4
 
-a8. a16 a8. a16  | % 5
-a8. g16 f8. f16 |
-g8. f16 d8. d16 |
-c4. r8 |
+\tuplet3/2{a4 a8} \tuplet3/2{a4 a8}  | % 5
+\tuplet3/2{a4 g8} \tuplet3/2{f4 f8} |
+\tuplet3/2{g4 f8} \tuplet3/2{d4 d8} |
+c4~\tuplet3/2{c4 r8} |
 
-d8. d16 d8. c16 |
-f8. f16 g8. g16 |
-a8. a16 g8. f16 |
-g4. c8 |
+\tuplet3/2{d4 d8} \tuplet3/2{d4 c8} |
+\tuplet3/2{f4 f8} \tuplet3/2{g4 g8} |
+\tuplet3/2{a4 a8} \tuplet3/2{g4 f8} |
+g4~\tuplet3/2{g4 c8} |
 
-a8. a16 g8. g16 |
-f4. r8 |
-c8. c16 c8. c16 |
-f8. f16 f8. f16 |
+\tuplet3/2{a4 a8} \tuplet3/2{g4 g8} |
+f4~\tuplet3/2{f4 r8} |
+\tuplet3/2{c4 c8} \tuplet3/2{c4 c8} |
+\tuplet3/2{f4 f8} \tuplet3/2{f4 f8} |
 
-g8. g16 a8. a16 | % 17
-g4. r8 |
-a8. a16 a8. a16 |
-a8. g16 f8. f16 |
+\tuplet3/2{g4 g8} \tuplet3/2{a4 a8} | % 17
+g4~\tuplet3/2{g4 r8} |
+\tuplet3/2{a4 a8} \tuplet3/2{a4 a8} |
+\tuplet3/2{a4 g8} \tuplet3/2{f4 f8} |
 
-g8. f16 d8. d16 |
-c4. r8 |
-c'8. a16 c8. a16 |
-c8. c16 d8. d16 |
+\tuplet3/2{g4 f8} \tuplet3/2{d4 d8} |
+c4~\tuplet3/2{c4 r8} |
+\tuplet3/2{c'4 a8} \tuplet3/2{c4 a8} |
+\tuplet3/2{c4 c8} \tuplet3/2{d4 d8} |
 
-c8. c16 c8. c16 |
-c4. r8 |
-a4. a8 |
+\tuplet3/2{c4 c8} \tuplet3/2{c4 c8} |
+c4~\tuplet3/2{c4 r8} |
+a4~\tuplet3/2{a4 a8} |
 c4 c |
-d4. d8 |
+d4~\tuplet3/2{d4 d8} |
 
 c4 c |
-a8. a16 g8. f16 |
-g4. c8 |
-a8. a16 g8. g16 |
-f4. r8 |
+\tuplet3/2{a4 a8} \tuplet3/2{g4 f8} |
+g4~\tuplet3/2{g4 c8} |
+\tuplet3/2{a4 a8} \tuplet3/2{g4 g8} |
+f4~\tuplet3/2{f4 r8} |
 
 \bar "|."
 }

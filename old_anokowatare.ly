@@ -14,25 +14,25 @@ melody =
 \tempo 4=80
 \numericTimeSignature
 
-\tuplet3/2{e4 e8} \tuplet3/2{e4 f8} |
-\tuplet3/2{e4 d8} e8 r |
-\tuplet3/2{e4 a8} \tuplet3/2{b4 a8} |
-b4. r8 | % 
+e8. e16 e8. f16 |
+e8. d16 e8 r |
+e8. a16 b8. a16 |
+b4. r8 |
 
-\tuplet3/2{a4 b8} \tuplet3/2{c4 c8} |
-\tuplet3/2{b4 a8} \tuplet3/2{f4 e8} |
-\tuplet3/2{d4 d8} \tuplet3/2{d4 d8} |
-e4. r8 | % 
+a8. b16 c8. c16 |
+b8. a16 f8. e16 |
+d8. d16 d8. d16 |
+e4. r8 |
 
-\tuplet3/2{b4 b8} \tuplet3/2{b4 e8} |
-\tuplet3/2{c4 b8} \tuplet3/2{a4 a8} |
-\tuplet3/2{b4 c8} \tuplet3/2{e4 f8} |
-e4. r8 | 
+b8. b16 b8. e16 |
+c8. b16 a8. a16 |
+b8. c16 e8. f16 |
+e4. r8 |
 
-\tuplet3/2{c4 e8} \tuplet3/2{f4 e8} |
-\tuplet3/2{a4 f8} \tuplet3/2{e4 a8} |
-\tuplet3/2{b4 a8} \tuplet3/2{c4 b8} |
-a4. r8| 
+c8. e16 f8. e16 |
+a8. f16 e8. a16 |
+b8. a16 c8. b16 |
+a4. r8|
 
 
 \bar "|."

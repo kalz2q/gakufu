@@ -14,25 +14,25 @@ melody =
 \tempo 4=70
 \numericTimeSignature
 %
-bes8. bes16 es4 |
-f8. f16 g4 |
-bes8 bes g8. es16 |
-f4. r8 |
+\tuplet3/2{bes4 bes8} es4 |
+\tuplet3/2{f4 f8} g4 |
+\tuplet3/2{bes4 bes8} \tuplet3/2{g4 es8} |
+f4~\tuplet3/2{f4 r8} |
 
-g8. g16 f8 f |
-es8. es16 c4 |
-bes8 bes es8. f16 |
-g4. r8 |
+\tuplet3/2{g4 g8} \tuplet3/2{f4 f8} |
+\tuplet3/2{es4 es8} c4 |
+\tuplet3/2{bes4 bes8} \tuplet3/2{es4 f8} |
+g4~\tuplet3/2{g4 r8} |
 
-g8. as16 bes8 c |
-bes8. bes16 g4 |
-f8 f g8. es16 |
-f4. r8 |
+\tuplet3/2{g4 as8} \tuplet3/2{bes4 c8} |
+\tuplet3/2{bes4 bes8} g4 |
+\tuplet3/2{f4 f8} \tuplet3/2{g4 es8} |
+f4~\tuplet3/2{f4 r8} |
 
-bes8. bes16 g8 f |
-es8. es16 c8 c |
-bes es g8. f16 |
-es4. r8 |
+\tuplet3/2{bes4 bes8} \tuplet3/2{g4 f8} |
+\tuplet3/2{es4 es8} \tuplet3/2{c4 c8} |
+\tuplet3/2{bes4 es8} \tuplet3/2{g4 f8} |
+es4~\tuplet3/2{es4 r8} |
 
 
 
