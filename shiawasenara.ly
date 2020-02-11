@@ -13,7 +13,7 @@ indent = 0\mm
 \key g \major
 \time 4/4
 \set Score.tempoHideNote = ##t
-\tempo 4=120
+\tempo 4=110
 \numericTimeSignature
 
 \partial 4

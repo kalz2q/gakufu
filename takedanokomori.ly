@@ -11,7 +11,7 @@
     \key e \minor
     \time 4/4
     \set Score.tempoHideNote = ##t
-\tempo 4=120
+\tempo 4=100
     \numericTimeSignature
     d4 e8 g a4 a8 b |
     a2 g4 e |
