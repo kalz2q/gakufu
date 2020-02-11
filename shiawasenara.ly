@@ -2,13 +2,11 @@
 
 % 幸せなら手をたたこう(しあわせならてをたたこう)
 
-\score {
-
-\layout {
-line-width = #170
-indent = 0\mm
+\header {
+piece = "幸せなら手をたたこう(しあわせならてをたたこう)"
 }
 
+melody =
 \relative c' {
 \key g \major
 \time 4/4
@@ -31,7 +29,24 @@ g4 r2
 
 \bar "|."
 }
+\score {
+<<
+\chords {
+\set noChordSymbol = ""
+\set chordChanges=##t
+%%
+r4 g g g g d:7 d:7 d:7 d:7
+d:7 d:7 d:7 d:7 g g g g g g g g
+c c g g d:7 d:7 d:7 d:7 g g g
 
+
+
+}
+\new Staff {\melody}
+>>
+\layout {
+line-width = #190
+indent = 0\mm
+}
 \midi {}
-
 }

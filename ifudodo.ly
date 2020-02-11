@@ -3,13 +3,11 @@
 % 威風堂々(エルガー)
 % \index{いふうどうどう@威風堂々(エルガー)}
 
-\score {
-
-\layout {
-line-width = #170
-indent = 0\mm
+\header {
+piece = "威風堂々(エルガー。いふうどうどう)"
 }
 
+melody =
 \relative c'' {
 \key bes \major
 \time 2/4
@@ -64,7 +62,19 @@ d c |
 
 \bar "|."
 }
+\score {
+<<
+\chords {
+\set noChordSymbol = ""
+\set chordChanges=##t
+%%
 
+}
+\new Staff {\melody}
+>>
+\layout {
+line-width = #190
+indent = 0\mm
+}
 \midi {}
-
 }
