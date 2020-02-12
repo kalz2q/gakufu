@@ -2,18 +2,16 @@
 
 % あんたがたどこさ(ひごさひごどこさくまもとさ)
 
-\score {
-
-\layout {
-line-width = #170
-indent = 0\mm
+\header {
+piece = "あんたがたどこさ(ひごさひごどこさくまもとさ)"
 }
 
+melody =
 \relative c' {
 \key c \major
 \time 4/4
 \set Score.tempoHideNote = ##t
-\tempo 4=120
+\tempo 4=100
 \numericTimeSignature
 
 d8. d16 d8. f16 g8. f16 g4 | 
@@ -32,7 +30,19 @@ g4 r r2 |
 
 \bar "|."
 }
+\score {
+<<
+\chords {
+\set noChordSymbol = ""
+\set chordChanges=##t
+%%
 
+}
+\new Staff {\melody}
+>>
+\layout {
+line-width = #190
+indent = 0\mm
+}
 \midi {}
-
 }
