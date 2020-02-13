@@ -2,13 +2,11 @@
 
 % 森のくまさん(あるひもりのなかくまさんにであった)
 
-\score {
-
-\layout {
-line-width = #170
-indent = 0\mm
+\header {
+piece = "森のくまさん(あるひもりのなかくまさんにであった)"
 }
 
+melody =
 \relative c'' {
 \key c \major
 \time 4/4
@@ -27,9 +25,23 @@ a'2 r8 a b a |
 g4 f e d |
 c2 r |
 
+
+
 \bar "|."
 }
+\score {
+<<
+\chords {
+\set noChordSymbol = ""
+\set chordChanges=##t
+%%
 
+}
+\new Staff {\melody}
+>>
+\layout {
+line-width = #190
+indent = 0\mm
+}
 \midi {}
-
 }

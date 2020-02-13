@@ -1,19 +1,17 @@
 \version "2.18.2"
 
-% カントリー・ロード(かんとりーろーど、このみち))
+% カントリー・ロード(かんとりーろーどこのみち)
 
-\score {
-
-\layout {
-line-width = #170
-indent = 0\mm
+\header {
+piece = "カントリー・ロード(かんとりーろーどこのみち)"
 }
 
+melody =
 \relative c' {
 \key f \major
 \time 4/4
 \set Score.tempoHideNote = ##t
-\tempo 4=120
+\tempo 4=110
 \numericTimeSignature
 \partial 2
 
@@ -38,7 +36,19 @@ f1 |
 
 \bar "|."
 }
+\score {
+<<
+\chords {
+\set noChordSymbol = ""
+\set chordChanges=##t
+%%
 
+}
+\new Staff {\melody}
+>>
+\layout {
+line-width = #190
+indent = 0\mm
+}
 \midi {}
-
 }
