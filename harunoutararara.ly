@@ -3,18 +3,16 @@
 % 春の唄(らららあかいはなたば)
 % \index{はるのうた@春の唄(らららあかいはなたば)}
 
-\score {
-
-\layout {
-line-width = #170
-indent = 0\mm
+\header {
+piece = "春の唄(らららあかいはなたば)"
 }
 
+melody =
 \relative c' {
 \key f \major
 \time 2/4
 \set Score.tempoHideNote = ##t
-\tempo 4=120
+\tempo 4=80
 \numericTimeSignature
 
 r8 c  f e  |%1
@@ -40,7 +38,19 @@ f4  f |%17
  
 \bar "|."
 }
+\score {
+<<
+\chords {
+\set noChordSymbol = ""
+\set chordChanges=##t
+%%
 
+}
+\new Staff {\melody}
+>>
+\layout {
+line-width = #190
+indent = 0\mm
+}
 \midi {}
-
 }
