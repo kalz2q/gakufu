@@ -42,6 +42,10 @@ a8 g r |
 \set noChordSymbol = ""
 \set chordChanges=##t
 %%
+g4. d:7 d:7 g
+g d:7 d:7 g
+g a:m a:m g
+g a:m d:7 g
 
 }
 \new Staff {\melody}
