@@ -24,8 +24,29 @@ c' a16 g f8 d16 c d4. r8 |
 \break
 a'4 a16 g g8 g f16 d d8 c |
 d d f d16 c d4. r8 |
+d d f d16 c d4. r8 | %9
+\break
+c8 d d f f g a g |
+c a16 g f8 d16 c d4. r8 |
+c' a16 g f8 d16 c d4. r8 |
+\break
+a'4 a16 g g8 g f16 d d8 c |
+d f f d16 c d4. r8 |
+d c d f g d'16 c a8 g |
+\break
+g a f d16 c d4. r8 |
+g a f d16 c d4. r8 |
+g a f d16 c d8 f a c |
+\break
+d,2 f |
+a4 a16 g g8 g f16 d d8 c |
 d d f d16 c d4. r8 |
 \break
+d'd f d16 c d4. r8 |
+c, d d f f g a g |
+c a16 f f8 g f4. r8 |
+
+
 
 
 \bar "|."
@@ -36,6 +57,14 @@ d d f d16 c d4. r8 |
 \set noChordSymbol = ""
 \set chordChanges=##t
 %%
+d4:m d:m d:m d:m g:m g:m d:m d:m d:m d:m d:m d:m 
+f f bes bes a:m g:m d:m d:m a:m g:m d:m d:m 
+d:m d:m d:m d:m g:m g:m d:m d:m g:m g:m d:m d:m 
+f f d:m d:m a:m g:m d:m d:m a:m g:m d:m d:m 
+d:m d:m d:m d:m g:m g:m d:m d:m d:m d:m g:m g:m
+g:m g:m d:m d:m g:m f d:m d:m g:m f d:m d:m 
+d:m d:m d:m d:m d:m d:m d:m d:m g:m g:m d:m d:m 
+g:m g:m d:m d:m f f d:m d:m a:m g:m d:m d:m 
 
 }
 \new Staff {\melody}
