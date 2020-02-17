@@ -15,37 +15,38 @@ melody =
 \tempo 4=90
 \numericTimeSignature
 
-\tuplet3/2{g4 d8} \tuplet3/2{g4 g8} | % 1
-\tuplet3/2{a4 g8} \tuplet3/2{a4 a8} | % 2
-\tuplet3/2{d,4 d8} \tuplet3/2{bes'4 bes8} | % 3
-\tuplet3/2{a4 g8} \tuplet3/2{a4 a8} % 4
+g8. d16 g8. g16 | % 1
+a8. g16 a8. a16 | % 2
+d,8. d16 bes'8. bes16 | % 3
+a8. g16 a8. a16 % 4
 \bar "||" 
-\tuplet3/2{r4 g8} a4~ | % 5
+r8. g16 a4~ | % 5
 a2 | % 6
 \autoBeamOff
-\tuplet3/2{bes4 g8} \tuplet3/2{g4 a8} | % 7
+bes8.  g16 g8. a16 | % 7
 \autoBeamOn
-\tuplet3/2{bes4 a8} \tuplet3/2{d4 d8} | % 8
-bes4 \tuplet3/2{a4 bes8} | % 9
-g4 \tuplet3/2{bes4 bes8} | % 10
-\tuplet3/2{a4 bes8} \tuplet3/2{g4 es8} | % 11
-\tuplet3/2{g4 a8} es4 | % 12
+bes8. a16 d8. d16 | % 8
+bes4 a8. bes16 | % 9
+g4 bes8. bes16 | % 10
+a8. 
+bes16 g8. es16 | % 11
+g8. a16 es4 | % 12
 d2 ~ | % 13
 d4 r | % 14
-\tuplet3/2{r4 g8} \tuplet3/2{bes4 bes8} |
-\tuplet3/2{a4 bes8} g4 |
-es4 \tuplet3/2{d4 bes8} |
+r8. g16 bes8. bes16 |
+a8. bes16 g4 |
+es4 d8. bes16 |
 d2
-\tuplet3/2{r4 es8} \tuplet3/2{a4 a8} |
-\tuplet3/2{g4 g8} \tuplet3/2{es4 d8} |
-\tuplet3/2{es4 g8} \tuplet3/2{d4 bes8} |
+r8. es16 a8. a16 |
+g8. g16 es8. d16 |
+es8. g16 d8. bes16 |
 a4 r | % 22
-d4~ \tuplet3/2{d4 bes8}  | % 23
-d4 \tuplet3/2{es4 d8} |
-\tuplet3/2{es4 es8} \tuplet3/2{g4 g8} |
+d4. bes8 |
+d4 es8. d16 |
+es8. es16 g8. g16 |
 a4 r |
-d4~ \tuplet3/2{d4 bes8} |
-\tuplet3/2{a4 g8} \tuplet3/2{bes4 a8} |
+d4. bes8 |
+a8. g16 bes8. a16 |
 g4 a |
 a r |
 
