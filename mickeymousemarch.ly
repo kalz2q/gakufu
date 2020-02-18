@@ -11,7 +11,7 @@ melody =
 \key f \major
 \time 2/4
 \set Score.tempoHideNote = ##t
-\tempo 4=80
+\tempo 4=90
 \numericTimeSignature
 
 f8. f16 f8. f16 |
