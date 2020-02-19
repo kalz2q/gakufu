@@ -15,22 +15,22 @@ melody =
 \tempo 4=100
 \numericTimeSignature
 
-\tuplet3/2{d4 f8} \tuplet3/2{f4 f8} |
-f4 \tuplet3/2{g4 f8} |
-f4~\tuplet3/2{f4 d8} |
-f4 \tuplet3/2{bes4 c8} |
-\tuplet3/2{d4 d8} \tuplet3/2{d4 c8}|
-\tuplet3/2{d4 c8} \tuplet3/2{c4 bes8} |
+d8. f16 f8. f16 |
+f4 g8. f16 |
+f4. d8 |
+f4 bes8. c16 |
+d8. d16 d8. c16|
+d8. c16 c8. bes16 |
 \time 3/4
-\tuplet3/2{bes4 g8} g2 |
+bes8. g16 g2 |
 \break
 \time 2/4
-\tuplet3/2{r4 bes8} \tuplet3/2{bes4 bes8} |
-\tuplet3/2{g4 bes8} \tuplet3/2{bes4 c8} |
-bes4~\tuplet3/2{bes4 g8} |
-f4 \tuplet3/2{g4 g8} |
-f4~\tuplet3/2{f4 g8~} |
-\tuplet3/2{g4 d8} \tuplet3/2{d4 c8} |
+r8. bes16 bes8. bes16 |
+g8. bes16 bes8. c16 |
+bes4. g8 |
+f4 g8. g16 |
+f4. g8~ |
+g8. d16 d8. c16 |
 bes2 |
 
 \bar "|."
