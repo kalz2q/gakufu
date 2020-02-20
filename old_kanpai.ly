@@ -1,13 +1,15 @@
 \version "2.18.2"
 
-% 乾杯の歌(ヴェルディ。椿姫より)
-% \index{かんぱい@乾杯の歌(ヴェルディ。椿姫より)}
+% 乾杯の歌(ヴェルディ)
+% \index{かんぱい@乾杯の歌(ヴェルディ)}
 
-\header {
-piece = "乾杯の歌(ヴェルディ。椿姫より)"
+\score {
+
+\layout {
+line-width = #170
+indent = 0\mm
 }
 
-melody =
 \relative c' {
 \key f \major
 \time 3/4
@@ -74,27 +76,7 @@ f2. |
 
 \bar "|."
 }
-\score {
-<<
-\chords {
-\set noChordSymbol = ""
-\set chordChanges=##t
-%%
-r2. f f f f f f c:7 c:7
-f f f f f f f f c:7
-c:7 f f bes bes f f c:7 c:7 f
-f bes bes a:m a:m c:7 c:7 a:m a:m f
-f f f f f c:7 c:7 f f 
-f f f f f f c:7 c:7 f
 
-
-
-}
-\new Staff {\melody}
->>
-\layout {
-line-width = #190
-indent = 0\mm
-}
 \midi {}
+
 }
