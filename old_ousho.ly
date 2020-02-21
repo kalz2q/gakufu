@@ -46,12 +46,6 @@ d2. |
 \set noChordSymbol = ""
 \set chordChanges=##t
 %%
-d4 d d d d d g g g a:7 a:7 a:7
-b:m b:m b:m a:7 a:7 d b:m a:7 b:m a:7 a:7 a:7
-d d d d d d g g a:7 d d d
-g g g d d d d d d a:7 d d d
-
-
 
 }
 \new Staff {\melody}

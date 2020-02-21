@@ -2,16 +2,18 @@
 
 % 女のみち(わたしがささげたそのひとに)
 
-\header {
-piece = "女のみち(わたしがささげたそのひとに)"
+\score {
+
+\layout {
+line-width = #170
+indent = 0\mm
 }
 
-melody =
 \relative c' {
 \key bes \major
 \time 4/4
 \set Score.tempoHideNote = ##t
-\tempo 4=90
+\tempo 4=120
 \numericTimeSignature
 
 r8 f4 f8 f4 g16 bes g f~ |
@@ -38,27 +40,7 @@ bes1 |
 
 \bar "|."
 }
-\score {
-<<
-\chords {
-\set noChordSymbol = ""
-\set chordChanges=##t
-%%
-bes4 bes bes bes bes bes bes bes 
-bes bes bes bes f:7 f:7 f:7 f:7 bes bes bes bes
-es es f:7 f:7 bes bes f:7 f:7
-bes bes bes bes f:7 f:7 bes bes bes bes bes bes
-bes bes bes bes f:7 f:7 f:7 f:7 bes bes g:m g:m
-es es es es bes bes g:m g:m
-f:7 f:7 bes bes bes bes f:7 f:7 bes bes bes bes
 
-
-}
-\new Staff {\melody}
->>
-\layout {
-line-width = #190
-indent = 0\mm
-}
 \midi {}
+
 }
