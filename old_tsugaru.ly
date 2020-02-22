@@ -3,16 +3,18 @@
 % 津軽海峡・冬景色(うえのはつのやこうれっしゃおりたときから)
 % \index{つがる@津軽海峡・冬景色(うえのはつのやこうれっしゃおりたときから)}
 
-\header {
-piece = "津軽海峡・冬景色(うえのはつのやこうれっしゃおりたときから)"
+\score {
+
+\layout {
+line-width = #170
+indent = 0\mm
 }
 
-melody =
 \relative c' {
 \key c \major
 \time 4/4
 \set Score.tempoHideNote = ##t
-\tempo 4=70
+\tempo 4=120
 \numericTimeSignature
 
 \tuplet3/2{e8 e e} \tuplet3/2{e f e} \tuplet3/2{a a a} \tuplet3/2{a b a} |
@@ -40,28 +42,7 @@ a1 |
 
 \bar "|."
 }
-\score {
-<<
-\chords {
-\set noChordSymbol = ""
-\set chordChanges=##t
-%%
-a4:m a:m a:m a:m a:m a:m a:m a:m 
-d:m d:m a:m a:m b:m7.5- b:m7.5-  e:7 e:7
-a:m a:m a:m a:m a:m a:m a:m a:m
-d:m d:m a:m a:m e:7 e:7 a:m a:m d:m d:m d:m d:m
-a:m a:m a:m a:m f f b:7 b:7 e:sus4.7 e:sus4.7 e:7 e:7
-a:m a:m f f d:m d:m e:7 e:7 a:m a:m a:m a:m
-b:m7.5- b:m7.5- b:m7.5- b:m7.5- e:7 e:7 e:7 e:7 a:m a:m a:m a:m
 
-
-
-}
-\new Staff {\melody}
->>
-\layout {
-line-width = #190
-indent = 0\mm
-}
 \midi {}
+
 }

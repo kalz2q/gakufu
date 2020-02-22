@@ -4,16 +4,18 @@
 % \index{てねし@テネシーワルツ}
 
 
-\header {
-piece = "テネシーワルツ"
+\score {
+
+\layout {
+line-width = #170
+indent = 0\mm
 }
 
-melody =
 \relative c' {
 \key g \major
 \time 3/4
 \set Score.tempoHideNote = ##t
-\tempo 4=80
+\tempo 4=120
 \numericTimeSignature
 \partial 4
 
@@ -54,32 +56,7 @@ g2 r4 |
 
 \bar "|."
 }
-\score {
-<<
-\chords {
-\set noChordSymbol = ""
-\set chordChanges=##t
-%%
-r4 g g g g g g
-g:7 g:7 g:7 c c c g g g
-g g g d:7 d:7 d:7 d:7 d:7 d:7
-g g g g g g g:7 g:7 g:7
-c c c g g g d:7 d:7 d:7
-g g g g g g g g g 
-b:7 b:7 b:7 c c c g g g
-g g g e:7 e:7 e:7 a:7 a:7 a:7
-d:7 d:7 d:7 g g g g g g
-g:7 g: g:7 c c c g g g
-d: d:7 d:7 g g g g g g 
 
-
-
-}
-\new Staff {\melody}
->>
-\layout {
-line-width = #190
-indent = 0\mm
-}
 \midi {}
+
 }
