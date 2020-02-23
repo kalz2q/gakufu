@@ -2,13 +2,11 @@
 
 % かごめかごめ(かごのなかのとりは)
 
-\score {
-
-\layout {
-line-width = #170
-indent = 0\mm
+\header {
+piece = "かごめかごめ(かごのなかのとりは)"
 }
 
+melody =
 \relative c'' {
 \key c \major
 \time 4/4
@@ -33,7 +31,19 @@ a4. g8 a4 r |
 
 \bar "|."
 }
+\score {
+<<
+\chords {
+\set noChordSymbol = ""
+\set chordChanges=##t
+%%
 
+}
+\new Staff {\melody}
+>>
+\layout {
+line-width = #190
+indent = 0\mm
+}
 \midi {}
-
 }
