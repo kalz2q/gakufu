@@ -3,13 +3,11 @@
 % 浪花節だよ人生は(のめといわれてすなおにのんだ)
 % \index{なにわぶし@浪花節だよ人生は(のめといわれてすなおにのんだ)}
 
-\score {
-
-\layout {
-line-width = #170
-indent = 0\mm
+\header {
+piece = "浪花節だよ人生は(のめといわれてすなおにのんだ)"
 }
 
+melody =
 \relative c' {
 \key bes \major
 \time 4/4
@@ -45,10 +43,30 @@ bes1~ |%
 bes2 r2 |
 
 
-
 \bar "|."
 }
+\score {
+<<
+\chords {
+\set noChordSymbol = ""
+\set chordChanges=##t
+%%
+bes4 bes bes bes bes bes bes bes g:m g:m g:m g:m
+bes bes bes bes bes bes bes bes bes bes bes bes bes bes bes bes 
+f:7/c f:7/c f:7/c f:7/c c:m c:m c:m c:m c:m c:m bes bes bes bes bes bes
+f:7 f:7 f:7 bes es es es es es es es es bes bes bes bes
+bes bes bes bes f:7 f:7 f:7 f:7 bes bes bes bes bes bes bes bes
+bes bes bes bes bes bes bes bes f:7 f:7 f:7 f:7
+bes bes bes bes f:7 f:7 f:7 f:7 bes bes bes bes
 
+
+
+}
+\new Staff {\melody}
+>>
+\layout {
+line-width = #190
+indent = 0\mm
+}
 \midi {}
-
 }
