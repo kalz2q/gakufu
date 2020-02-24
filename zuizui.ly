@@ -1,20 +1,18 @@
 \version "2.18.2"
 
-% ずいずいずっころばし
+% ずいずいずっころばし(ごまみそずいちゃつぼにおわれてとっぴんしゃん)
 % \index{ずいずいずっころばし}
 
-\score {
-
-\layout {
-line-width = #170
-indent = 0\mm
+\header {
+piece = "ずいずいずっころばし(ごまみそずいちゃつぼにおわれてとっぴんしゃん)"
 }
 
+melody =
 \relative c'' {
 \key g \minor
 \time 4/4
 \set Score.tempoHideNote = ##t
-\tempo 4=120
+\tempo 4=110
 \numericTimeSignature
 
 g bes a8. a16 g8. g16 |
@@ -37,7 +35,19 @@ g2 a4 r |
 
 \bar "|."
 }
+\score {
+<<
+\chords {
+\set noChordSymbol = ""
+\set chordChanges=##t
+%%
 
+}
+\new Staff {\melody}
+>>
+\layout {
+line-width = #190
+indent = 0\mm
+}
 \midi {}
-
 }
