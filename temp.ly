@@ -19,8 +19,8 @@ melody =
 r8 c |
 f f16 f ~ f8 f f f16 f ~ f8 f |
 g8. g16 ~ g8 a a4 r |
-f8 f16 f ~ f8 c' c8. bes16 ~ bes8 a |
-g8. d16 ~ d8 f e4 r8 c | 
+f8 f16 f ~ f8 c' \tuplet3/2{c4 bes a} |
+\tuplet3/2{g4 d f} e4 r8 c | 
 
 f f16 f ~ f8 f f f16 f ~ f8 f |
 g8. g16 ~ g8 a a4 r |
