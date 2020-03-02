@@ -1,19 +1,17 @@
 \version "2.18.2"
 
-% 秋桜(うすべにのこすもすがあきのひの)
+% 秋桜(うすべにのこすもすがあきのひのなにげないひだまりにゆれている)
 
-\score {
-
-\layout {
-line-width = #170
-indent = 0\mm
+\header {
+piece = "秋桜(うすべにのこすもすがあきのひのなにげないひだまりにゆれている)"
 }
 
+melody =
 \relative c' {
 \key f \minor
 \time 4/4
 \set Score.tempoHideNote = ##t
-\tempo 4=120
+\tempo 4=80
 \numericTimeSignature
 
 c16 des c des c8 c16 des c des c8 c16 des es f |
@@ -56,7 +54,30 @@ f1 |
 
 \bar "|."
 }
+\score {
+<<
+\chords {
+\set noChordSymbol = ""
+\set chordChanges=##t
+%%
+f4:m f:m f:m f:m bes:m bes:m bes:m bes:m es es es es
+as as c:7 c:7 f:m f:m f:m f:m es es es es des des c:m c:m
+f:m f:m f:m f:m f:m f:m f:m f:m bes:m bes:m bes:m bes:m 
+es es es es as as c:7 c:7
+f:m f:m f:m f:m es es es es
+des des c:m c:m des des c:7 c:7 c:7 c:7
+f:m f:m f:m f:m bes:m bes:m bes:m bes:m 
+es es es es as as c:7 c:7 f:m f:m f:m f:m
+bes:m bes:m bes:m bes:m f:m f:m es es
+des des c:m c:m f:m f:m f:m f:m
 
+
+}
+\new Staff {\melody}
+>>
+\layout {
+line-width = #190
+indent = 0\mm
+}
 \midi {}
-
 }

@@ -42,6 +42,9 @@ f1 |
 \set noChordSymbol = ""
 \set chordChanges=##t
 %%
+r2 f2:maj7 f:maj7 f:maj7 f:maj7 c:sus4.7 c:sus4.7 cis:dim cis:dim
+d:m d:m d:m d:m bes:maj7 bes:maj7 c:9 c:9 a:m7 a:m7 d:m d:m
+es:maj7 es:maj7 es:maj7 es:maj7 bes bes c:sus4.7 c:sus4.7 bes bes bes bes
 
 }
 \new Staff {\melody}
