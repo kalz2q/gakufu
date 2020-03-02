@@ -11,7 +11,7 @@ melody =
 \key g \major
 \time 3/4
 \set Score.tempoHideNote = ##t
-\tempo 4=150
+\tempo 4=140
 \numericTimeSignature
 %
 g4 g e~ |
