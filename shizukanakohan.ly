@@ -2,18 +2,16 @@
 
 % 静かな湖畔(しずかなこはんのもりのかげから)
 
-\score {
-
-\layout {
-line-width = #170
-indent = 0\mm
+\header {
+piece = "静かな湖畔(しずかなこはんのもりのかげから)"
 }
 
+melody =
 \relative c' {
 \key f \major
 \time 4/4
 \set Score.tempoHideNote = ##t
-\tempo 4=120
+\tempo 4=100
 \numericTimeSignature
 
 f8. f16 f8. g16 a8. a16 a8. a16 |
@@ -23,9 +21,25 @@ bes8. a16 bes8. c16 a4 r8. c16 |
 a4 r8. c16 a4 r8. c16 |
 a8. c16 a8. c16 a4 r |
 
+
+
 \bar "|."
 }
+\score {
+<<
+\chords {
+\set noChordSymbol = ""
+\set chordChanges=##t
+%%
+f f f f  c:7 c:7 f f f f f f
+c:7 c:7 f f f f f f f f f f
 
+}
+\new Staff {\melody}
+>>
+\layout {
+line-width = #190
+indent = 0\mm
+}
 \midi {}
-
 }

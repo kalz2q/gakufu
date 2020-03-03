@@ -2,13 +2,11 @@
 
 % 江戸の子守唄(ねんねんころりよおころりよ)
 
-\score {
-
-\layout {
-line-width = #170
-indent = 0\mm
+\header {
+piece = "江戸の子守唄(ねんねんころりよおころりよ)"
 }
 
+melody =
 \relative c'' {
 \key c \minor
 \time 4/4
@@ -28,7 +26,21 @@ d2. r4 |
 
 \bar "|."
 }
+\score {
+<<
+\chords {
+\set noChordSymbol = ""
+\set chordChanges=##t
+%%
+as2:m as:m as:m as:m as:m as:m g g
+c2:m c:m c:m c:m c:m c:m g g
 
+}
+\new Staff {\melody}
+>>
+\layout {
+line-width = #190
+indent = 0\mm
+}
 \midi {}
-
 }
