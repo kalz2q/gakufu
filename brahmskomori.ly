@@ -1,21 +1,17 @@
 \version "2.18.2"
 
-% ブラームスの子守歌
-% \index{ぶらーむす@ブラームスの子守歌}
-% \index{こもりうた@ブラームスの子守歌}
+% ブラームスの子守歌(ねんねんころり)
 
-\score {
-
-\layout {
-line-width = #170
-indent = 0\mm
+\header {
+piece = "ブラームスの子守歌(ねんねんころり)"
 }
 
+melody =
 \relative c' {
 \key c \major
 \time 3/4
 \set Score.tempoHideNote = ##t
-\tempo 4=120
+\tempo 4=100
 \numericTimeSignature
 
 \partial 4
@@ -34,16 +30,33 @@ c'2 a8 f |
 g2 e8 c |
 f4 g a |
 \break
-g2 c,8 c8 | %12
+e16 g4.. c,8 c8 | %12
 c'2 a8 f |
 g2 e8 c |
-f4 \appoggiatura{g16 f} e4 d |
+f8 g16 f e4 d4 |
 c2 
 
 
 \bar "|."
 }
+\score {
+<<
+\chords {
+\set noChordSymbol = ""
+\set chordChanges=##t
+%%
+r4 c c c e:m7 e:m7 e:m7 a:m a:m a:m c c c 
+d:m d:m d:m d:m d:m d:m g g g c c c
+f f f c c c f f f g g g
+f f f c c c g:7 g:7 g:7 c c 
 
+
+}
+\new Staff {\melody}
+>>
+\layout {
+line-width = #190
+indent = 0\mm
+}
 \midi {}
-
 }
