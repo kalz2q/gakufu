@@ -3,18 +3,16 @@
 % 山の音楽家(わたしゃおんがくかやまのこりす)
 % \index{やまのおんがくか@山の音楽家(わたしゃおんがくかやまのこりす)}
 
-\score {
-
-\layout {
-line-width = #170
-indent = 0\mm
+\header {
+piece = "山の音楽家(わたしゃおんがくかやまのこりす)"
 }
 
+melody =
 \relative c' {
 \key f \major
 \time 4/4
 \set Score.tempoHideNote = ##t
-\tempo 4=120
+\tempo 4=100
 \numericTimeSignature
 
 r2 r4 r8 c |
@@ -28,9 +26,23 @@ a8 a a bes16 a g8 g g c16 bes |
 a8 a a bes16 a g8 g g c |
 a f g g f4 r |
 
+
+
 \bar "|."
 }
+\score {
+<<
+\chords {
+\set noChordSymbol = ""
+\set chordChanges=##t
+%%
 
+}
+\new Staff {\melody}
+>>
+\layout {
+line-width = #190
+indent = 0\mm
+}
 \midi {}
-
 }

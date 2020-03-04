@@ -57,7 +57,7 @@ c2 r4
 %%
 r4 c c c c c c c c g:7 g:7 g:7 g:7 c c c c
 c c c c c c c c g:7 g:7 g:7 g:7 c c c c
-f f f f c c c c d:7 d:7 d:7 d:7 c c c c
+f f f f c c c c g:7 g:7 g:7 g:7 c c c c
 f f f f c c c c g:7 g:7 g:7 g:7 c c c c
 c c c c g:7 g:7 g:7 g:7 c c c c c c c c 
 f f f f c c c c g:7 g:7 g:7 g:7 c c c 

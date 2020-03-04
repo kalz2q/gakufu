@@ -1,9 +1,9 @@
 \version "2.18.2"
 
-%
+% 美しき(うつくしきわがこやいずこ)
 
 \header {
-piece = "うつくしき(うつくしきわがこやいずこ)"
+piece = "美しき(うつくしきわがこやいずこ)"
 }
 
 melody =
@@ -11,7 +11,7 @@ melody =
 \key c \major
 \time 4/4
 \set Score.tempoHideNote = ##t
-\tempo 4=80
+\tempo 4=100
 \numericTimeSignature
 \partial 4
 g4 |
