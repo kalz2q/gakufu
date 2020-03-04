@@ -1,9 +1,9 @@
 \version "2.18.2"
 
-%
+% アルプス一万尺(あるぷすいちまんじゃくこやりのうえであるぺんおどりを)
 
 \header {
-piece = "アルプス一万尺"
+piece = "アルプス一万尺(あるぷすいちまんじゃくこやりのうえであるぺんおどりを)"
 }
 
 melody =
@@ -11,7 +11,7 @@ melody =
 \key g \major
 \time 2/4
 \set Score.tempoHideNote = ##t
-\tempo 4=60
+\tempo 4=80
 \numericTimeSignature
 %
 g8 g a b |
@@ -39,8 +39,9 @@ g4 g8 r |
 \chords {
 \set chordChanges=##t
 %
-g2 g4 d:7 g2 g4 d:7 g2 c d:7 g
-c c g g c c g4 d:7 g1
+g4 g g d:7 g g g d:7 
+g g c c d:7 d:7 g g
+c c c c g g g g c c c c g d:7 g g
 }
 \new Staff {\melody}
 >>
