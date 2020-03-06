@@ -3,18 +3,16 @@
 % 愛の喜び(マルティーニ)
 % \index{あいのよろこび@愛の喜び(マルティーニ)}
 
-\score {
-
-\layout {
-line-width = #170
-indent = 0\mm
+\header {
+piece = "愛の喜び(マルティーニ)"
 }
 
+melody =
 \relative c' {
 \key g \major
 \time 6/8
 \set Score.tempoHideNote = ##t
-\tempo 4=120
+\tempo 4=90
 \numericTimeSignature
 
 r4 r8 r4 d8 |
@@ -30,7 +28,21 @@ g2. |
 
 \bar "|."
 }
+\score {
+<<
+\chords {
+\set noChordSymbol = ""
+\set chordChanges=##t
+%%
+r4. r4. g d:7 g g c g d:7 d:7 
+c d:7 g a:m  g d:7 g g
 
+}
+\new Staff {\melody}
+>>
+\layout {
+line-width = #190
+indent = 0\mm
+}
 \midi {}
-
 }
