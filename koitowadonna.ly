@@ -1,16 +1,12 @@
 \version "2.18.2"
 
-% 恋とはどんなものかしら(モーツアルト。フィガロの結婚より)
-% \index{こいとは@恋とはどんなものかしら(モーツアルト。フィガロの結婚より)}
-% \index{もーつぁると@恋とはどんなものかしら(モーツアルト。フィガロの結婚より)}
+% 恋とはどんなものかしら(モーツァルト。フィガロの結婚より)
 
-\score {
-
-\layout {
-line-width = #170
-indent = 0\mm
+\header {
+piece = "恋とはどんなものかしら(モーツァルト。フィガロの結婚より)"
 }
 
+melody =
 \relative c' {
 \key f \major
 \time 4/4
@@ -43,9 +39,23 @@ g bes g bes |
 f2 e8. f16 g8. a16 |
 f1  |
 
+
+
 \bar "|."
 }
+\score {
+<<
+\chords {
+\set noChordSymbol = ""
+\set chordChanges=##t
+%%
 
+}
+\new Staff {\melody}
+>>
+\layout {
+line-width = #190
+indent = 0\mm
+}
 \midi {}
-
 }
