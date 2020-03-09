@@ -8,27 +8,22 @@ piece = "嘆きのセレナータ(トセリ。こころもゆるあつきこい�
 
 melody =
 \relative c'' {
-\key es \major
+\key as \major
 \time 3/4
 \set Score.tempoHideNote = ##t
 \tempo 4=100
 \numericTimeSignature
 %
-es4. bes8 c g |
-bes2 es,4 |
-es g d' |
-c2 bes4 |
+as4. es8 f c |
+es2 as,4 |
+as c g' |
+f2 es4 |
+bes'4. c8 des as |
 \break
-f'4. g8 as es |
-d4. es8 f c |
-bes [c d] bes f g |
-\break
-es2. ~ |
-es4 r r |
-es'4. bes8 c g |
-bes2 es,4 |
-es g d' |
-\break
+g4. as8 bes f |
+es [f g] es bes c |
+as2. ~ |
+as4 r r |
 
 
 
@@ -40,10 +35,9 @@ es g d' |
 \set noChordSymbol = ""
 \set chordChanges=##t
 %%
-es4 es es es es es es es es bes:7 bes:7 bes:7
-bes:7 bes:7 bes:7 bes:7 bes:7 bes:7 bes:7 bes:7 bes:7
-es es es es es es es es es es es es es es es
-bes:7 bes:7 bes:7 
+as4 as as as as as as as as es:7 es:7 es:7
+es:7 es:7 es:7 es:7 es:7 es:7 es:7 es:7 es:7
+as as as as as as 
 
 
 
