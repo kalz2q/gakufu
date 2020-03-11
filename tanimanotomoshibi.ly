@@ -25,7 +25,8 @@ d2 e4 d |
 g,2 fis4 g |
 a1~ |
 \break
-a2 d,4 g |
+a2 d,4 g | % 8
+
 
 
 
