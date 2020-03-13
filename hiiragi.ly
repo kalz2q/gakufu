@@ -1,16 +1,12 @@
 \version "2.18.2"
 
 % ひいらぎかざろう(クリスマス)
-% \index{ひいらぎ@ひいらぎかざろう(クリスマス)}
-% \index{くりすます@ひいらぎかざろう(クリスマス)}
 
-\score {
-
-\layout {
-line-width = #170
-indent = 0\mm
+\header {
+piece = "ひいらぎかざろう(クリスマス)"
 }
 
+melody =
 \relative c'' {
 \key d \major
 \time 4/4
@@ -37,7 +33,19 @@ fis4 e d r |
 
 \bar "|."
 }
+\score {
+<<
+\chords {
+\set noChordSymbol = ""
+\set chordChanges=##t
+%%
 
+}
+\new Staff {\melody}
+>>
+\layout {
+line-width = #190
+indent = 0\mm
+}
 \midi {}
-
 }
