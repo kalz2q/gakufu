@@ -1,14 +1,13 @@
 \version "2.18.2"
 
-% きらきら星(きらきらぼし)
+% きらきら星(きらきらぼし。Twinkle Twinkle Little Star)
 
-\score {
 
-\layout {
-line-width = #170
-indent = 0\mm
+\header {
+piece = "きらきら星(きらきらぼし。Twinkle Twinkle Little Star)"
 }
 
+melody =
 \relative c' {
 \key f \major
 \time 4/4
@@ -35,9 +34,24 @@ f4 f c'c |
 d d c r |
 bes bes a a |
 g g f r |
+
+
+
 \bar "|."
 }
+\score {
+<<
+\chords {
+\set noChordSymbol = ""
+\set chordChanges=##t
+%%
 
+}
+\new Staff {\melody}
+>>
+\layout {
+line-width = #190
+indent = 0\mm
+}
 \midi {}
-
 }
