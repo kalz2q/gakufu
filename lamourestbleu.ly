@@ -1,15 +1,12 @@
 \version "2.18.2"
 
 % 恋は水色(ポール・モーリア)
-% \index{こいはみずいろ@恋は水色(ポール・モーリア)}
 
-\score {
-
-\layout {
-line-width = #170
-indent = 0\mm
+\header {
+piece = "恋は水色(ポール・モーリア)"
 }
 
+melody =
 \relative c'' {
 \key bes \major
 \time 4/4
@@ -30,7 +27,19 @@ fis e fis4 g2
 
 \bar "|."
 }
+\score {
+<<
+\chords {
+\set noChordSymbol = ""
+\set chordChanges=##t
+%%
 
+}
+\new Staff {\melody}
+>>
+\layout {
+line-width = #190
+indent = 0\mm
+}
 \midi {}
-
 }

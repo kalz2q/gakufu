@@ -8,56 +8,56 @@ piece = "岬めぐり(あなたがいつかはなしてくれたみさきをぼ�
 
 melody =
 \relative c'' {
-\key g \major
+\key f \major
 \time 4/4
 \set Score.tempoHideNote = ##t
 \tempo 4=90
 \numericTimeSignature
 \partial 4
 %
-b8 a |
-b2~b8 d b g16 g |
-e2. b'8 b |
+a8 g |
+a2~a8 c a f16 f |
+d2. a'8 a |
 
-a2~a8 g e e16 d~ |
-d2. d8 d |
-e8 e~e2 d8 d' |
+g2~g8 f d d16 c~ |
+c2. c8 c |
+d8 d~d2 c8 c' |
 
-b2. r8 b |
-a4. b8 a g4 e8 |
-a2. d,8 d |
+a2. r8 a |
+g4. a8 g f4 d8 |
+g2. c,8 c |
 
-b'2~b8 d b g16 g | % 9
-e2. b'8 b |
-a2~a8 g e e16 d~ |
+a'2~a8 c a f16 f | % 9
+d2. a'8 a |
+g2~g8 f d d16 c~ |
 
-d2. d8 d |
-e e~ e2 d8 d' |
-b2. b8 b |
+c2. c8 c |
+d d~ d2 c8 c' |
+a2. a8 a |
 
-a4. b8 a g4 g8 |
-g2. b8 b |
-b2~b8 c b a16 g~ |
+g4. a8 g f4 f8 |
+f2. a8 a |
+a2~a8 bes a g16 f~ |
 
-g2. b8 b |
-a2. a8 g16 b~ |
-b2. b8 d |
+f2. a8 a |
+g2. g8 f16 a~ |
+a2. a8 c |
 
-e2~e8 e e8. b16 |
-d2. b8 b |
-a2~a8 b a g |
+d2~d8 d d8. a16 |
+c2. a8 a |
+g2~g8 a g f |
 
-b2. e8 b |
-b8 b~b2 g8 g |
-fis2. e8 dis |
+a2. d8 a |
+a8 a~a2 f8 f |
+e2. d8 cis |
 
-e2 e16 e g8~g e |
-d2. d8 d |
-e8 e~e2 d8 d' |
+d2 d16 d f8~f d |
+c2. c8 c |
+d8 d~d2 c8 c' |
 
-b2. b8 b |
-a2~a8 g e g16 g~ |
-g2.
+a2. a8 a |
+g2~g8 f d f16 f~ |
+f2.
 
 
 
@@ -69,17 +69,17 @@ g2.
 \set noChordSymbol = ""
 \set chordChanges=##t
 %%
-r4 g g g g e:m e:m e:m e:m
-a:m a:m a:m a:m g g g g e:m e:m e:m e:m
-g g g g a:m a:m a:m a:m d:7 d:7 d:7 d:7
-g g g g e:m e:m e:m e:m a:m a:m a:m a:m
-g g g g e:m e:m e:m e:m g g g g
-d d c:6 c:6 g g g g b:7 b:7 b:7 b:7
-e:m e:m e:m e:m a:m a:m a:m a:m b b b b
-c c c c b:m b:m b:m b:m a:m a:m a:m a:m
-d d d d e:m e:m e:m e:m b b b b
-c c c c g g g g a:m a:m a:m a:m
-g g g g d d c:6 c:6 g g g g
+r4 f f f f d:m d:m d:m d:m
+g:m g:m g:m g:m f f f f d:m d:m d:m d:m
+f f f f g:m g:m g:m g:m c:7 c:7 c:7 c:7
+f f f f d:m d:m d:m d:m g:m g:m g:m g:m
+f f f f d:m d:m d:m d:m f f f f
+c c bes:6 bes:6 f f f f a:7 a:7 a:7 a:7
+d:m d:m d:m d:m g:m g:m g:m g:m a a a a
+bes bes bes bes a:m a:m a:m a:m g:m g:m g:m g:m
+c c c c d:m d:m d:m d:m a a a a
+bes bes bes bes f f f f g:m g:m g:m g:m
+f f f f c c bes:6 bes:6 f f f f
 
 
 
