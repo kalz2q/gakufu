@@ -1,16 +1,13 @@
 \version "2.18.2"
 
 % そりすべり(リロイ・アンダーソン。クリスマス)
-% \index{そりすべり@そりすべり(リロイ・アンダーソン。クリスマス)}
-% \index{くりすます@そりすべり(リロイ・アンダーソン。クリスマス)}
 
-\score {
 
-\layout {
-line-width = #170
-indent = 0\mm
+\header {
+piece = "そりすべり(リロイ・アンダーソン。クリスマス)"
 }
 
+melody =
 \relative c'' {
 \key f \major
 \time 4/4
@@ -31,9 +28,21 @@ g4 g8 a g f d4 |
 f1~ |
 f4 c' c c |
 
-\bar ":|."
+\bar "|."
 }
+\score {
+<<
+\chords {
+\set noChordSymbol = ""
+\set chordChanges=##t
+%%
 
+}
+\new Staff {\melody}
+>>
+\layout {
+line-width = #190
+indent = 0\mm
+}
 \midi {}
-
 }
