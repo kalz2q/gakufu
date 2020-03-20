@@ -1,6 +1,6 @@
 \version "2.18.2"
 
-% TAKUMI/匠(大改造！！劇的ビフォーアフターより)
+% TAKUMI/匠(三連符バージョン)
 
 \header {
 piece = "TAKUMI/匠(大改造！！劇的ビフォーアフターより)"
@@ -15,27 +15,31 @@ melody =
 \numericTimeSignature
 \partial 4
 %
-c8 d |
-% e2 e8. f16~f8 g |
+c8 d | % 1
+% e2 e8. f16~f8 g | % 2
 e2 \tuplet3/2{e4 f g} |
-% g4. g8 d'8. c16~c8 b |
+% g4. g8 d'8. c16~c8 b | % 3
 g4. g8 \tuplet3/2{d'4 c4 b} |
 \break
-b4. c8~c8 e,4 g8~ |
+b4. c8~c8 e,4 g8~ | % 4
 g2 r4 g4 |
 g4. f8~f4 e |
 c2 r4 g' |
 g4. f8~f4 a |
 \break
-b4. g8~g4 g8 f |
-e2 e8. f16~f8 g |
-g4. g8 d'8. c16~c8 b |
+b4. g8~g4 g8 f | % 8
+% e2 e8. f16~f8 g | % 9
+e2 \tuplet3/2{e4 f g} | % 9
+% g4. g8 d'8. c16~c8 b | % 10
+g4. g8 \tuplet3/2{d'4 c b} | % 10
 b4. c8~c8 e,4 g8~ |
 \break
-g2 r4 g |
-a2 a8. b16~b8 c |
+g2 r4 g | % 12
+% a2 a8. b16~b8 c | % 13
+a2 \tuplet3/2{a4 b c} | % 13
 c4. g8~g4 g |
-a2 a8. b16~b8 c |
+% a2 a8. b16~b8 c | % 15
+a2 \tuplet3/2{a4 b c} | % 15
 e4. d8~d4 r |
 
 
