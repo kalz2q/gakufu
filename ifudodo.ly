@@ -9,55 +9,56 @@ piece = "威風堂々(エルガー。いふうどうどう)"
 
 melody =
 \relative c'' {
-\key bes \major
+\key a \major
 \time 2/4
 \set Score.tempoHideNote = ##t
 \tempo 4=120
 \numericTimeSignature
 
-bes2 |
-a8 bes c4 |
-g2 |
-f2 |
-es2 |
-d8 es f4 |
-c2 ~ |
-c2 |
-\break
-d2 | %9
-e8 f4 g8 |
-c2 |
-f,2 |
-bes2 |
-bes8 a4 g8 |
-a2 ~ |
 a2 |
+gis8 a b4 |
+fis2 |
+e2 |
+d2 |
+cis8 d e4 |
+b2 ~ |
+b2 |
 \break
-bes2 | %17
-a8 bes c4 |
-g2 |
-f2 |
-es2 | % 21
-d8 es f4 |
-c2 ~ |
-c2 |
+cis2 | %9
+dis8 e4 fis8 |
+b2 |
+e,2 |
+a2 |
+a8 gis4 fis8 |
+e2 ~ |
+e2 | % 16
 \break
-d2 | %25
-e8 f4 g8 |
-c2 |
-f, 2 |
-es8 es4 es8 ~ | % 29
-es8 d c4 |
-d2 ~ |
-d |
+a2 | %17
+gis8 a b4 |
+fis2 |
+e2 |
+d2 | % 21
+cis8 d e4 |
+b2 ~ |
+b2 |
 \break
-g2 | % 33
-a8 bes4 c8 |
-f,2 |
-bes |
-r2 |
-es,4 d ~ |
-d c |
+cis2 | %25
+dis8 e4 fis8 |
+b2 |
+e, 2 |
+d'2 | % 29 rewrite start => % 32
+d8 cis4 b8 | 
+cis2 ~ |
+cis | % 32
+\break
+fis,2 | % 33
+gis8 a4 b8 | % 34
+e,2 |
+a |
+a, |
+d8 cis4 b8 |
+a2~ |
+a |
 
 
 \bar "|."
