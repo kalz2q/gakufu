@@ -7,39 +7,53 @@ piece = "真っ赤な太陽(まっかにもえたたいようだからまなつ�
 }
 
 melody =
-\relative c'' {
-\key c \major
+\relative c' {
+\key f \major
 \time 4/4
 \set Score.tempoHideNote = ##t
 \tempo 4=130
 \numericTimeSignature
 \partial 2
 %
-a4 c8 d |
+d4 f8 g |
 \bar ".|:"
-e4. e8 e2 | % 1
-r2 e8 d c d |
-e4. e8 e2 |
-r2 a8 g e d |
-c4. c8 c2 |
-r8 a c es d c a g |
-a2. r4 |
+a4. a8 a2 | % 1
+r2 a8 g f g |
+a4. a8 a2 |
+r2 d8 c a g |
+f4. f8 f2 |
+r8 d f as g f d c |
+d2. r4 |
 
-r2 a8 a c b |
+r2 d8 d f g |
 \bar ":|."
-e4. e8 e2 | % 
-r2 e8 d c d |
-e4. e8 e2 |
-r2 a8 g e d |
-c4. c8 c2 |
-r8 a c es d c a g |
-a2. r4 |
+a4. a8 a2 | % 
+r2 a8 g f g |
+a4. a8 a2 |
+r2 d8 c a g |
+f4. f8 f2 |
+r8 d f as g f d c |
+d2. r4 |
 
-r2 r4 c |
-d4 d8 c d4 d8 c |
-d4 d8 c d e d c |
-d4 d8 c d4 d8 
+r2 r4 f |
+g4 g8 f g4 g8 f |
+g4 g8 f g a g f |
+g4 g8 f g4 g8 f |
+g4 g8 f g a g f |
+g4 g8 f d2 |
+r4 e8 e f4 g |
+a1 |
 
+r2 d,4 f8 g |
+\bar "||"
+a4. a8 a2 | % 
+r2 a8 g f g |
+a4. a8 a2 |
+r2 d8 c a g |
+f4. f8 f2 |
+r8 d f as g f d c |
+d2. r4 |
+<fis, a d> 1 |
 
 
 
