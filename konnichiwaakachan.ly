@@ -11,64 +11,65 @@ melody =
 \key d \major
 \time 4/4
 \set Score.tempoHideNote = ##t
-\tempo 4=90
+\tempo 4=110
 \numericTimeSignature
 %
-d4 d8. d16 d4 fis8. d16 |
-b4 r r a8. b16 |
-cis4 d fis e8. d16 |
+d4 \tuplet3/2{d4 d8} d4 \tuplet3/2{fis4 d8} |
+b4 r r \tuplet3/2{a4 b8} |
+cis4 d fis \tuplet3/2{e4 d8} |
 e2. r4 |
 
-d4 d8. d16 d4 fis8. d16 |
-b4 r r a8. b16 |
-cis4 d fis8 e4 cis8 |
-d2. fis8. g16 |
+d4 \tuplet3/2{d4 d8} d4 \tuplet3/2{fis4 d8} |
+b4 r r \tuplet3/2{a4 b8} |
+% cis4 d fis8 e4 cis8 | % 7
+cis4 d \tuplet3/2{fis4 e8~} \tuplet3/2{e4 cis8} |
+d2. \tuplet3/2{fis4 g8} | % 8
 
 a4 fis g b | % 9
-a2. d,8. e16 |
+a2. \tuplet3/2{d,4 e8} |
 fis4 d e g |
 fis2 e |
 
-d4 d d fis8. d16 | % 13
-b4 r r a8. b16 |
+d4 d d \tuplet3/2{fis4 d8} | % 13
+b4 r r \tuplet3/2{a4 b8} |
 cis4 d e cis |
-d2. d8. e16 |
+d2. \tuplet3/2{d4 e8} |
 
 fis2 fis4 fis | % 17
-e4 d8. e16 fis4 d8. e16 |
+e4 \tuplet3/2{d4 e8} fis4 \tuplet3/2{d4 e8} |
 fis2 fis4 fis |
-e4 d8. e16 fis4 fis8. gis16 |
+e4 \tuplet3/2{d4 e8} fis4 \tuplet3/2{fis4 gis8} |
 
-a4. a8 a4 a8. a16 | % 21
-gis4 fis8. gis16 a4 fis8. gis16 |
-a4. a8 b4 gis |
+a4~\tuplet3/2{a4 a8} a4 \tuplet3/2{a4 a8} | % 21
+gis4 \tuplet3/2{fis4 gis8} a4 \tuplet3/2{fis4 gis8} |
+a4~\tuplet3/2{a4 a8} b4 gis |
 g!2 a |
 
-d,4 d8. d16 d4 fis8. d16 | % 25
-b4 r r a8. b16 |
-cis4 d fis e8. d16 |
+d,4 \tuplet3/2{d4 d8} d4 \tuplet3/2{fis4 d8} | % 25
+b4 r r \tuplet3/2{a4 b8} |
+cis4 d fis \tuplet3/2{e4 d8} |
 e2. r4 |
 
-d4 d8. d16 d4 fis8. d16 |
-b4 r r a8. b16 |
-cis4 d fis8 e4 cis8 |
+d4 \tuplet3/2{d4 d8} d4 \tuplet3/2{fis4 d8} |
+b4 r r \tuplet3/2{a4 b8} |
+cis4 d \tuplet3/2{fis4 e8~} \tuplet3/2{e4 cis8} |
 
-d2. fis8. g16 |
-a8 a4 fis8 g4 b |
-a2. d,8. e16 |
-fis4. d8 e4 g |
+d2. \tuplet3/2{fis4 g8} |
+\tuplet3/2{a4 a8~} \tuplet3/2{a4 fis8} g4 b | % 33
+a2. \tuplet3/2{d,4 e8} |
+fis4~\tuplet3/2{fis4 d8} e4 g | % 35
 
 fis2 e |
-d8 d4 d8 d4 fis8. d16 |
-b2. a8. b16 |
+\tuplet3/2{d4 d8~} \tuplet3/2{d4 d8} d4 \tuplet3/2{fis4 d8} | % 37
+b2. \tuplet3/2{a4 b8} |
 cis4 d e cis |
 
 d2. d4 | % 40
-b'4. b8 a4 fis |
-b4. b8 a4 fis |
-d4 d8. d16 d4 fis8. d16 |
+b'4~\tuplet3/2{b4 b8} a4 fis |
+b4~\tuplet3/2{b4 b8} a4 fis |
+d4 \tuplet3/2{d4 d8} d4 \tuplet3/2{fis4 d8} |
 
-b4 r r a8. b16 | % 44
+b4 r r \tuplet3/2{a4 b8} | % 44
 cis2 d 
 e a |
 a1~ |
