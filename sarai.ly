@@ -28,15 +28,15 @@ c4 c r8 e d e | % 9
 d8 c4 a8~a4 g8 a |
 c4 c r e8 a |
 g2 r4 e8 g |
-a4 g r e8 a |
+a4 g r e8 g | % 13
 a e e d e4 d8 c |
 d a a d~d4 c8 a |
 
 c2 r4 e8 g |
 c4. c8 b4. g8 |
 a2 r4 e8 g |
-c2~c8 a c a |
-b2 r8 e d e |
+c2~c8 a c a | % 19
+d2 r8 e d e |
 d c4 c8~c e d c |
 d a4 c8~c4 r8 a |
 b4. b8 c d4 c8~ |
