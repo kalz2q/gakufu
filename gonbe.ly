@@ -1,36 +1,45 @@
 \version "2.18.2"
 
-% 権兵衛さんの赤ちゃん(ごんべえさんのあかちゃんが)
-% \index{ごんべえ@権兵衛さんの赤ちゃん(ごんべえさんのあかちゃんが)}
+% 権兵衛さんの赤ちゃん(ごんべえさんのあかちゃん。リパブリック讃歌。ヨドバシカメラ)
 
 
-\score {
-
-\layout {
-line-width = #170
-indent = 0\mm
+\header {
+piece = "権兵衛さんの赤ちゃん(ごんべえさんのあかちゃん。リパブリック讃歌。ヨドバシカメラ)"
 }
 
+melody =
 \relative c' {
-\key as \major
+\key bes \major
 \time 4/4
 \set Score.tempoHideNote = ##t
-\tempo 4=120
+\tempo 4=110
 \numericTimeSignature
 
-es8. es16 es8. des16 c8. es16 as8. bes16 |
-c8. c16 c8. bes16 as4 r |
-f8. f16 f8. g16 as8. g16 as8. f16 |
-es8. f16 es8. c16 es4 r |
+f8. f16 f8. es16 d8. f16 bes8. c16 |
+d8. d16 d8. c16 bes4 r |
+g8. g16 g8. a16 bes8. a16 bes8. g16 |
+f8. g16 f8. d16 f4 r |
 \break
-es8. es16 es8. des16 c8. es16 as8. bes16 |
-c8. c16 c8. bes16 as4 as8. as16 |
-bes4 bes as g |
-as as as r |
+f8. f16 f8. es16 d8. f16 bes8. c16 |
+d8. d16 d8. c16 bes4 bes8. bes16 |
+c4 c bes a |
+bes bes bes r |
 
 \bar "|."
 }
+\score {
+<<
+\chords {
+\set noChordSymbol = ""
+\set chordChanges=##t
+%%
 
+}
+\new Staff {\melody}
+>>
+\layout {
+line-width = #190
+indent = 0\mm
+}
 \midi {}
-
 }
