@@ -1,14 +1,12 @@
 \version "2.18.2"
 
-% ラ・ラ・ルー(ディズニー わんわん物語)
+% ララルー(ディズニー「わんわん物語」)
 
-\score {
-
-\layout {
-line-width = #170
-indent = 0\mm
+\header {
+piece = "ララルー(ディズニー「わんわん物語」)"
 }
 
+melody =
 \relative c' {
 \key c \major
 \time 3/4
@@ -54,9 +52,23 @@ f2 a8 b |
 c2.~ |
 c2. |
 
+
+
 \bar "|."
 }
+\score {
+<<
+\chords {
+\set noChordSymbol = ""
+\set chordChanges=##t
+%%
 
+}
+\new Staff {\melody}
+>>
+\layout {
+line-width = #190
+indent = 0\mm
+}
 \midi {}
-
 }
