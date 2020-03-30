@@ -1,20 +1,18 @@
 \version "2.18.2"
 
-% 右から2番目の星(ディズニー ピーター・パン)
-% \index{みぎから@右から2番目の星(ディズニー ピーター・パン)}
+% 右から2番目の星(ディズニー「ピーター・パン」より The Second Star to the Right)
 
-\score {
 
-\layout {
-line-width = #170
-indent = 0\mm
+\header {
+piece = "右から2番目の星(ディズニー「ピーター・パン」より The Second Star to the Right)"
 }
 
+melody =
 \relative c'' {
 \key es \major
 \time 4/4
 \set Score.tempoHideNote = ##t
-\tempo 4=120
+\tempo 4=110
 \numericTimeSignature
 
 r4 bes as g | % 1
@@ -55,7 +53,19 @@ es1 |
 
 \bar "|."
 }
+\score {
+<<
+\chords {
+\set noChordSymbol = ""
+\set chordChanges=##t
+%%
 
+}
+\new Staff {\melody}
+>>
+\layout {
+line-width = #190
+indent = 0\mm
+}
 \midi {}
-
 }

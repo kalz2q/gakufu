@@ -1,16 +1,12 @@
 \version "2.18.2"
 
-% 夢はひそかに(ディズニー シンデレラ)
-% \index{ゆめはひそかに@夢はひそかに(ディズニー シンデレラ)}
-% \index{でぃずにー@夢はひそかに(ディズニー シンデレラ)}
+% 夢はひそかに(ディズニー「シンデレラ」より Dream Is a Wish Your Heart Makes)
 
-\score {
-
-\layout {
-line-width = #170
-indent = 0\mm
+\header {
+piece = "夢はひそかに(ディズニー「シンデレラ」より Dream Is a Wish Your Heart Makes)"
 }
 
+melody =
 \relative c' {
 \key g \major
 \time 4/4
@@ -58,7 +54,19 @@ g1 |
 
 \bar "|."
 }
+\score {
+<<
+\chords {
+\set noChordSymbol = ""
+\set chordChanges=##t
+%%
 
+}
+\new Staff {\melody}
+>>
+\layout {
+line-width = #190
+indent = 0\mm
+}
 \midi {}
-
 }
