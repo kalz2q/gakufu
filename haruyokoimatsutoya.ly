@@ -1,21 +1,19 @@
 \version "2.18.2"
 
 % 春よ、来い(松任谷由美。あわきひたりたつにわかあめ)
-% \index{はるよこい@春よ、来い(松任谷由美。あわきひたりたつにわかあめ)}
 
 
-\score {
 
-\layout {
-line-width = #170
-indent = 0\mm
+\header {
+piece = "春よ、来い(松任谷由美。あわきひたりたつにわかあめ)"
 }
 
+melody =
 \relative c' {
 \key e \minor
 \time 4/4
 \set Score.tempoHideNote = ##t
-\tempo 4=120
+\tempo 4=90
 \numericTimeSignature
 
 e4 b' a8. a16 b a g fis |
@@ -42,7 +40,19 @@ e2. r4 |
 
 \bar "|."
 }
+\score {
+<<
+\chords {
+\set noChordSymbol = ""
+\set chordChanges=##t
+%%
 
+}
+\new Staff {\melody}
+>>
+\layout {
+line-width = #190
+indent = 0\mm
+}
 \midi {}
-
 }
