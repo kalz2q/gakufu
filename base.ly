@@ -9,9 +9,9 @@ piece = ""
 melody =
 \relative c' {
 \key c \major
-\time 2/4
+\time 4/4
 \set Score.tempoHideNote = ##t
-\tempo 4=70
+\tempo 4=100
 \numericTimeSignature
 %
 
